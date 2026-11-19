@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/photo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --green:#185C37; --green-2:#21A366; --mint:#7FD1A3;
@@ -76,7 +76,6 @@ h1{font-size:50px;line-height:1.05;color:var(--navy);font-weight:800;letter-spac
 .kpi{padding:18px;text-align:center;border-radius:20px}
 .kpi .n{font-size:28px;font-weight:800;color:var(--green);line-height:1.1;position:relative}
 .kpi .l{font-size:14px;color:var(--muted);margin-top:4px;position:relative}
-.logos{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center;margin-top:26px;color:#5B6472;font-weight:700;font-size:16px}
 
 /* sections */
 section{padding:64px 0}
@@ -154,6 +153,87 @@ h2{font-size:34px;color:var(--navy);font-weight:800;letter-spacing:-.02em;margin
 .contact .coords a{color:#fff;text-decoration:none;font-weight:600}
 footer{color:#5B6472;font-size:13px;padding:10px 0 30px;text-align:center}
 
+/* wordmarks (remplacés automatiquement par les logos officiels s'ils existent dans assets/logos/) */
+.logo{display:flex;align-items:center;gap:8px;min-height:44px}
+.logo img{height:40px;width:auto;max-width:170px;object-fit:contain}
+.wm{font-size:26px;line-height:1;white-space:nowrap}
+.wm-sub{font-size:12px;color:var(--muted);font-weight:600;align-self:flex-end;padding-bottom:3px}
+.wm-loreal{font-family:'Playfair Display',Didot,serif;font-weight:700;letter-spacing:.14em;color:#000}
+.wm-sanofi{font-family:Inter,sans-serif;font-weight:800;color:#7A00E6;letter-spacing:-.02em;font-size:28px}
+.wm-bnp{font-family:Inter,sans-serif;font-weight:800;color:#00915A;font-size:22px;letter-spacing:.02em}
+.wm-bnp i{font-style:normal;margin-right:6px;color:#00915A}
+.wm-forvia{font-family:Inter,sans-serif;font-weight:800;color:#0F1A3C;letter-spacing:.12em}
+.wm-lvmh{font-family:'Playfair Display',Didot,serif;font-weight:400;letter-spacing:.32em;color:#111}
+.wm-cartier{font-family:'Great Vibes',cursive;color:#111;font-size:36px}
+.wm-elsan{font-family:Inter,sans-serif;font-weight:800;color:#0B4EA2;letter-spacing:.1em}
+.wm-carve{font-family:'Playfair Display',Georgia,serif;font-weight:700;letter-spacing:.24em;color:#111}
+.wm-xl{font-family:Inter,sans-serif;font-weight:800;color:#185C37;font-size:22px}
+
+/* bandeau logos */
+.logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
+.logos .logo{padding:12px 22px;border-radius:18px;min-height:64px;justify-content:center}
+.logos .logo img{height:34px;max-width:150px;position:relative}
+.logos .logo img[alt="BNP Paribas"],.logos .logo img[alt="LVMH"]{height:42px;max-width:170px}
+.logos .wm{font-size:22px}
+.logos .wm-cartier{font-size:30px}
+.logos .wm-sanofi{font-size:24px}
+.logos .wm-bnp{font-size:18px}
+.logos-title{text-align:center;color:var(--muted);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:30px}
+
+/* frise */
+.tl{position:relative;padding:10px 0 0}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:rgba(24,92,55,.12);border-radius:4px;overflow:hidden}
+.tl-fill{width:100%;height:0;background:linear-gradient(180deg,#7FD1A3,#21A366,#185C37);border-radius:4px;box-shadow:0 0 18px rgba(33,163,102,.6)}
+.tl-year{position:relative;text-align:center;margin:26px 0 22px;z-index:2}
+.tl-year span{display:inline-block;padding:8px 22px;border-radius:999px;background:linear-gradient(180deg,#22804F,#185C37);color:#fff;font-weight:800;font-size:18px;letter-spacing:.05em;box-shadow:0 10px 30px rgba(24,92,55,.35)}
+.tl-item{position:relative;width:50%;padding:0 46px 40px 0}
+.tl-item:nth-of-type(even){margin-left:50%;padding:0 0 40px 46px}
+.tl-dot{position:absolute;top:30px;right:-11px;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid #21A366;box-shadow:0 0 0 6px rgba(33,163,102,.18);z-index:2;transition:transform .4s}
+.tl-item:nth-of-type(even) .tl-dot{right:auto;left:-11px}
+.tl-item.in .tl-dot{transform:scale(1.15)}
+.tl-card{padding:22px;overflow:hidden;opacity:0;transform:translateX(-60px) rotate(-1.5deg);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.tl-item:nth-of-type(even) .tl-card{transform:translateX(60px) rotate(1.5deg)}
+.tl-item.in .tl-card{opacity:1;transform:none}
+.tl-card:hover{box-shadow:0 22px 60px rgba(15,60,40,.2),inset 0 1px 0 #fff}
+.tl-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;position:relative;padding-bottom:14px;margin-bottom:16px;border-bottom:1px solid rgba(15,60,40,.08)}
+.when{text-align:right;font-weight:800;color:var(--green);font-size:15px;line-height:1.3}
+.when small{display:block;font-weight:600;color:var(--muted);font-size:12.5px}
+.live{display:inline-flex;align-items:center;gap:6px;margin-right:8px;padding:3px 10px;border-radius:999px;background:#DCFCE7;color:#166534;font-size:12px}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:#22C55E;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}100%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+.tl-body{position:relative;display:grid;gap:16px}
+.ill{border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(15,60,40,.08)}
+.ill svg{display:block;width:100%;height:auto}
+.flow{animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-20}}
+.tl-item.in .bar{animation:grow .9s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:left}
+@keyframes grow{from{transform:scaleX(0)}}
+.tl-item.in .bars rect{animation:rise .9s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:bottom}
+@keyframes rise{from{transform:scaleY(0)}}
+.spark{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes tw{50%{transform:scale(.6) rotate(45deg);opacity:.6}}
+.txt h3{font-size:20px;color:var(--navy);line-height:1.25;margin-bottom:6px}
+.txt p{color:var(--muted);font-size:15px}
+.star .tl-card{border:2px solid rgba(33,163,102,.55);background:rgba(255,255,255,.7)}
+.star .tl-dot{width:30px;height:30px;right:-15px;top:26px;background:#185C37;border-color:#7FD1A3}
+.star:nth-of-type(even) .tl-dot{left:-15px}
+.ribbon{position:absolute;top:16px;right:-38px;transform:rotate(35deg);background:linear-gradient(90deg,#F2C811,#E8A33C);color:#0B2545;font-weight:800;font-size:12px;padding:5px 44px;z-index:3;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.star .tl-head{padding-right:70px}
+.tl-end{position:relative;z-index:2;max-width:640px;margin:10px auto 0;padding:20px 24px;text-align:center;color:var(--muted);font-size:15px}
+.tl-end b{color:var(--navy)}
+@media (prefers-reduced-motion:reduce){.tl-card{opacity:1;transform:none;transition:none}.flow,.spark{animation:none}}
+@media (max-width:820px){
+  .tl-line{left:14px;margin-left:0}
+  .tl-item,.tl-item:nth-of-type(even){width:100%;margin-left:0;padding:0 0 30px 40px}
+  .tl-dot,.tl-item:nth-of-type(even) .tl-dot{left:4px;right:auto}
+  .star .tl-dot,.star:nth-of-type(even) .tl-dot{left:1px}
+  .tl-card,.tl-item:nth-of-type(even) .tl-card{transform:translateY(30px)}
+  .tl-year{text-align:left;margin-left:-4px}
+  .tl-year span{font-size:15px;padding:6px 16px}
+  .when{text-align:left}
+  .wm{font-size:22px}
+}
+
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(11,37,69,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 .lb.open{display:flex}
@@ -211,7 +291,7 @@ footer{color:#5B6472;font-size:13px;padding:10px 0 30px;text-align:center}
     <a class="brand" href="#top"><img src="assets/photo.png" alt="">Hakim Ahamziou</a>
     <ul>
       <li><a href="#realisations">Réalisations</a></li>
-      <li><a href="#missions">Missions</a></li>
+      <li><a href="#missions">Parcours</a></li>
       <li><a href="#offres">Offres</a></li>
       <li><a href="#formation">Formation</a></li>
     </ul>
@@ -246,9 +326,8 @@ footer{color:#5B6472;font-size:13px;padding:10px 0 30px;text-align:center}
       <div class="kpi glass rv"><div class="n">~100</div><div class="l">apprenants formés</div></div>
       <div class="kpi glass rv"><div class="n">2</div><div class="l">masters : Data & IA, Finance</div></div>
     </div>
-    <div class="logos" aria-label="Ils m'ont fait confiance">
-      <span>L'Oréal</span><span>Sanofi</span><span>BNP Paribas</span><span>Forvia</span><span>LVMH</span><span>Cartier</span><span>Elsan</span><span>Carve Avocats</span>
-    </div>
+    <p class="logos-title">Ils m'ont fait confiance</p>
+    <div class="logos"><div class="logo glass"><img src="assets/logos/loreal.svg" alt="L'Oréal"></div><div class="logo glass"><img src="assets/logos/sanofi.svg" alt="Sanofi"></div><div class="logo glass"><img src="assets/logos/bnp.svg" alt="BNP Paribas"></div><div class="logo glass"><img src="assets/logos/lvmh.svg" alt="LVMH"></div><div class="logo glass"><img src="assets/logos/cartier.svg" alt="Cartier"></div><div class="logo glass"><span class="wm wm-forvia" style="position:relative">FORVIA</span></div><div class="logo glass"><img src="assets/logos/elsan.svg" alt="Elsan"></div><div class="logo glass"><span class="wm wm-carve" style="position:relative">CARVE</span></div></div>
   </div>
 </section>
 
@@ -285,36 +364,313 @@ footer{color:#5B6472;font-size:13px;padding:10px 0 30px;text-align:center}
 <!-- MISSIONS -->
 <section id="missions">
   <div class="wrap">
-    <p class="kicker">Missions</p>
-    <h2>Pour qui j'ai travaillé</h2>
-    <p class="lead">De l'audit à l'outil livré et adopté par les équipes.</p>
+    <p class="kicker">Parcours</p>
+    <h2>Mes missions, de la plus récente à la première</h2>
+    <p class="lead">Chaque mission : le client, la période, ce qu'on m'a demandé et ce que j'ai livré. Les visuels sont des illustrations, aucune donnée client n'est publiée.</p>
 
-    <div class="feat glass rv">
-      <div class="left">
-        <p class="kicker">Mission phare · L'Oréal Dermatological Beauty</p>
-        <h3>Outil de décision sur l'assortiment en pharmacie</h3>
-        <p>Un outil qui aide les équipes à décider quels produits dermatologiques sont référencés en pharmacie, à partir de données consolidées de plusieurs pays.</p>
-        <div class="chips"><span class="chip">Power Query</span><span class="chip">Excel</span><span class="chip">Modèle de données</span><span class="chip">Formation</span></div>
-      </div>
-      <div class="right">
-        <h4>Le besoin</h4>
-        <p>Des sources multiples et hétérogènes, difficiles à rapprocher pour arbitrer l'assortiment.</p>
-        <h4>Ce que j'ai fait</h4>
-        <p>Consolidation automatisée, règles de décision claires, interface simple, puis formation des équipes internationales.</p>
-        <h4>Le résultat</h4>
-        <p style="margin-bottom:0">Un outil unique et maintenable, base des décisions d'assortiment.</p>
-      </div>
-    </div>
+    <div class="tl" id="tl">
+      <div class="tl-line"><div class="tl-fill" id="tlfill"></div></div>
 
-    <div class="projects">
-      <div class="proj glass rv"><div class="who">L'Oréal · Travel Retail</div><h3>Nouveautés et catalogue généré par IA</h3><p>Audit des process, outils de contrôle, Power Automate.</p></div>
-      <div class="proj glass rv"><div class="who">Sanofi</div><h3>Migration Qlik Sense vers Power BI</h3><p>Reportings migrés et maintenus, support Excel.</p></div>
-      <div class="proj glass rv"><div class="who">Forvia · Achats</div><h3>Dashboard performance acheteurs</h3><p>Pipeline Power Query vers Power BI, diffusion automatisée.</p></div>
-      <div class="proj glass rv"><div class="who">BNP Paribas · Finance</div><h3>Qualité des données et reportings</h3><p>Contrôles qualité, VBA, dashboards Excel et Tableau.</p></div>
-      <div class="proj glass rv"><div class="who">Cartier · Finance</div><h3>Consolidation financière</h3><p>Fichiers centralisés sur SharePoint, Power Query, BI.</p></div>
-      <div class="proj glass rv"><div class="who">Carve Avocats</div><h3>Contrats générés par l'IA</h3><p>Devis et comptes rendus jusqu'au contrat Word automatique.</p></div>
-      <div class="proj glass rv"><div class="who">Elsan · Santé</div><h3>Suivi de projets et parcours patient</h3><p>Base commune, pipeline de données, Gantt automatisés.</p></div>
-      <div class="proj glass rv"><div class="who">LVMH · TPE</div><h3>Suivi de campagnes et outils de gestion</h3><p>Suivi des publications, devis, factures, plannings.</p></div>
+      <div class="tl-year"><span>2026</span></div>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/cartier.svg" alt="Cartier"></div>
+            <div class="when"><span class="live">En cours</span>Fin 2026</div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Fichiers financiers consolidés dans SharePoint"><rect width="400" height="220" rx="16" fill="#F7F3EE"/>
+                <g font-family="Inter,Arial" font-size="10" font-weight="700" fill="#fff">
+                  <g><rect x="22" y="26" width="58" height="40" rx="8" fill="#21A366"/><text x="51" y="50" text-anchor="middle">XLSX</text></g>
+                  <g><rect x="22" y="90" width="58" height="40" rx="8" fill="#21A366"/><text x="51" y="114" text-anchor="middle">XLSX</text></g>
+                  <g><rect x="22" y="154" width="58" height="40" rx="8" fill="#21A366"/><text x="51" y="178" text-anchor="middle">XLSX</text></g>
+                </g>
+                <path d="M84 46 C130 46 130 110 168 110 M84 110 H168 M84 174 C130 174 130 110 168 110" stroke="#9E1F23" stroke-width="2.5" fill="none" stroke-dasharray="5 5" class="flow"/>
+                <rect x="170" y="78" width="86" height="64" rx="14" fill="#036C70"/><text x="213" y="106" text-anchor="middle" font-family="Inter,Arial" font-size="11" font-weight="700" fill="#fff">SharePoint</text><text x="213" y="124" text-anchor="middle" font-family="Inter,Arial" font-size="10" fill="#CDEDEE">Power Query</text>
+                <path d="M260 110 H292" stroke="#9E1F23" stroke-width="2.5" stroke-dasharray="5 5" class="flow"/>
+                <rect x="296" y="50" width="86" height="120" rx="12" fill="#fff" stroke="#E7DED3"/>
+                <rect x="310" y="128" width="12" height="28" rx="3" fill="#9E1F23"/><rect x="328" y="108" width="12" height="48" rx="3" fill="#C9A86B"/><rect x="346" y="92" width="12" height="64" rx="3" fill="#9E1F23"/><rect x="364" y="116" width="10" height="40" rx="3" fill="#C9A86B"/>
+                <rect x="310" y="64" width="50" height="8" rx="4" fill="#E7DED3"/></svg>
+            </div>
+            <div class="txt">
+              <h3>Consolidation des données financières</h3>
+              <p>Les données financières étaient réparties dans de nombreux fichiers Excel. Je les centralise sur SharePoint, je les transforme avec Power Query pour obtenir une base unique et fiable, prête pour le reporting BI de la finance.</p>
+              <div class="chips"><span class="chip">SharePoint</span><span class="chip">Power Query</span><span class="chip">Excel</span><span class="chip">BI</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/loreal.svg" alt="L'Oréal"></div>
+            <div class="when">Sept. → déc. 2026<small>Travel Retail</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Catalogue produit généré par IA"><rect width="400" height="220" rx="16" fill="#F4F2FA"/>
+                <rect x="20" y="20" width="360" height="30" rx="10" fill="#fff"/><text x="36" y="40" font-family="Inter,Arial" font-size="12" font-weight="700" fill="#0B2545">One Catalog</text>
+                <g class="spark"><path d="M352 27 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" fill="#8B5CF6"/></g>
+                <g font-family="Inter,Arial" font-size="9" fill="#4B5563">
+                  <g><rect x="20" y="62" width="84" height="138" rx="10" fill="#fff"/><rect x="32" y="74" width="60" height="62" rx="8" fill="#E9E3F7"/><rect x="32" y="146" width="56" height="7" rx="3" fill="#0B2545"/><rect x="32" y="160" width="40" height="6" rx="3" fill="#D1D5DB"/><rect x="32" y="178" width="34" height="12" rx="6" fill="#DCFCE7"/></g>
+                  <g><rect x="112" y="62" width="84" height="138" rx="10" fill="#fff"/><rect x="124" y="74" width="60" height="62" rx="8" fill="#FDE8EF"/><rect x="124" y="146" width="56" height="7" rx="3" fill="#0B2545"/><rect x="124" y="160" width="40" height="6" rx="3" fill="#D1D5DB"/><rect x="124" y="178" width="34" height="12" rx="6" fill="#DCFCE7"/></g>
+                  <g><rect x="204" y="62" width="84" height="138" rx="10" fill="#fff"/><rect x="216" y="74" width="60" height="62" rx="8" fill="#E0F2FE"/><rect x="216" y="146" width="56" height="7" rx="3" fill="#0B2545"/><rect x="216" y="160" width="40" height="6" rx="3" fill="#D1D5DB"/><rect x="216" y="178" width="34" height="12" rx="6" fill="#FEF3C7"/></g>
+                  <g><rect x="296" y="62" width="84" height="138" rx="10" fill="#fff"/><text x="338" y="112" text-anchor="middle" font-size="26">✈</text><text x="338" y="140" text-anchor="middle" font-weight="700" fill="#0B2545">Aéroports</text><text x="338" y="156" text-anchor="middle">Clients · Marques</text></g>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Lancement des nouveautés et catalogue IA</h3>
+              <p>J'ai audité le circuit des nouveaux produits destinés aux boutiques d'aéroport, puis simplifié les outils : ajout et contrôle des nouveautés, référentiel clients, aéroports et marques, contrôle des données financières. Le catalogue « One Catalog » est désormais généré par l'IA et des tâches sont automatisées avec Power Automate.</p>
+              <div class="chips"><span class="chip">Audit</span><span class="chip">SharePoint</span><span class="chip">Power BI</span><span class="chip">IA générative</span><span class="chip">Power Automate</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item star">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="ribbon">★ Mission phare</div>
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/loreal.svg" alt="L'Oréal"></div>
+            <div class="when">2026<small>Dermatological Beauty · Levallois</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Pyramide d'assortiment et linéaire en pharmacie"><rect width="400" height="220" rx="16" fill="#EEF6F1"/>
+                <g font-family="Inter,Arial" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">
+                  <path d="M110 24 L150 84 H70Z" fill="#185C37"/><text x="110" y="74">Stars</text>
+                  <path d="M66 90 H154 L180 136 H40Z" fill="#21A366"/><text x="110" y="120">Cœur de gamme</text>
+                  <path d="M36 142 H184 L206 190 H14Z" fill="#7FD1A3"/><text x="110" y="172" fill="#0B2545">Complémentaires</text>
+                </g>
+                <rect x="226" y="24" width="158" height="172" rx="12" fill="#fff"/>
+                <text x="240" y="44" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#0B2545">Linéaire pharmacie</text>
+                <g><rect x="238" y="54" width="134" height="4" fill="#CBD5E1"/>
+                <rect x="242" y="64" width="16" height="30" rx="3" fill="#185C37"/><rect x="262" y="70" width="16" height="24" rx="3" fill="#185C37"/><rect x="282" y="62" width="16" height="32" rx="3" fill="#21A366"/><rect x="302" y="68" width="16" height="26" rx="3" fill="#21A366"/><rect x="322" y="66" width="16" height="28" rx="3" fill="#7FD1A3"/><rect x="342" y="72" width="16" height="22" rx="3" fill="#7FD1A3"/>
+                <rect x="238" y="94" width="134" height="4" fill="#CBD5E1"/>
+                <rect x="242" y="108" width="16" height="30" rx="3" fill="#21A366"/><rect x="262" y="112" width="16" height="26" rx="3" fill="#21A366"/><rect x="282" y="104" width="16" height="34" rx="3" fill="#185C37"/><rect x="302" y="110" width="16" height="28" rx="3" fill="#7FD1A3"/><rect x="322" y="106" width="16" height="32" rx="3" fill="#E5E7EB" stroke="#EF4444" stroke-dasharray="3 2"/><rect x="342" y="114" width="16" height="24" rx="3" fill="#7FD1A3"/>
+                <rect x="238" y="138" width="134" height="4" fill="#CBD5E1"/></g>
+                <rect x="240" y="156" width="62" height="24" rx="12" fill="#DCFCE7"/><text x="271" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#166534">✓ Garder</text>
+                <rect x="308" y="156" width="64" height="24" rx="12" fill="#FEE2E2"/><text x="340" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#991B1B">✕ Retirer</text></svg>
+            </div>
+            <div class="txt">
+              <h3>Outil « Mix Management Pyramide »</h3>
+              <p>Les équipes devaient décider quels produits dermatologiques (marques du groupe) occupent les linéaires des pharmacies. J'ai conçu l'outil d'aide à la décision : consolidation des sources de plusieurs pays avec Power Query, classement des produits en pyramide d'assortiment et règles claires pour garder ou retirer une référence. J'ai ensuite formé les équipes internationales.</p>
+              <div class="chips"><span class="chip">Power Query</span><span class="chip">Excel</span><span class="chip">Modèle de données</span><span class="chip">Aide à la décision</span><span class="chip">Formation</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo" data-logo="carve"><span class="wm wm-carve">CARVE</span><span class="wm-sub">Avocats</span></div>
+            <div class="when">2026<small>Cabinet d'avocats</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Devis et compte rendu transformés en contrat par l'IA"><rect width="400" height="220" rx="16" fill="#F3F4F6"/>
+                <g font-family="Inter,Arial" font-size="10" font-weight="700">
+                  <rect x="20" y="30" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="58" text-anchor="middle" fill="#0B2545">Devis</text><rect x="34" y="70" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="82" width="38" height="6" rx="3" fill="#E5E7EB"/>
+                  <rect x="20" y="120" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="148" text-anchor="middle" fill="#0B2545">Compte rendu</text><rect x="34" y="160" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="172" width="38" height="6" rx="3" fill="#E5E7EB"/>
+                  <path d="M104 65 C140 65 140 110 162 110 M104 155 C140 155 140 110 162 110" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-dasharray="5 5" class="flow"/>
+                  <circle cx="196" cy="110" r="34" fill="#8B5CF6"/><text x="196" y="106" text-anchor="middle" fill="#fff" font-size="13">IA</text><text x="196" y="122" text-anchor="middle" fill="#EDE9FE" font-size="8">Power Automate</text>
+                  <path d="M232 110 H262" stroke="#0B2545" stroke-width="2.5" stroke-dasharray="5 5" class="flow"/>
+                  <rect x="266" y="22" width="112" height="176" rx="10" fill="#fff" stroke="#2B579A" stroke-width="2"/><rect x="266" y="22" width="112" height="26" rx="10" fill="#2B579A"/><text x="322" y="40" text-anchor="middle" fill="#fff">Contrat Word</text>
+                  <rect x="280" y="62" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="76" width="70" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="90" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="104" width="60" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="118" width="84" height="6" rx="3" fill="#E5E7EB"/>
+                  <path d="M288 170 c8 -14 14 6 22 -6 s12 4 22 -4" stroke="#0B2545" stroke-width="2" fill="none"/>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Contrats rédigés automatiquement par l'IA</h3>
+              <p>Les juristes reprenaient à la main devis et comptes rendus pour rédiger leurs contrats de fiducie. J'ai mis en place une chaîne automatique : l'IA extrait les informations utiles, Power Automate les injecte dans le modèle Word, et le contrat est prêt à relire.</p>
+              <div class="chips"><span class="chip">IA générative</span><span class="chip">Power Automate</span><span class="chip">API</span><span class="chip">Word</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/lvmh.svg" alt="LVMH"></div>
+            <div class="when">2026<small>Communication</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Suivi des campagnes publicitaires"><rect width="400" height="220" rx="16" fill="#F5F3EF"/>
+                <g font-family="Inter,Arial" font-size="9" font-weight="700">
+                  <g><rect x="20" y="20" width="114" height="180" rx="12" fill="#fff"/><rect x="30" y="30" width="94" height="96" rx="8" fill="#D6CFC4"/><circle cx="62" cy="64" r="12" fill="#F5F3EF"/><path d="M30 126 L66 92 L94 112 L124 84 V126Z" fill="#B8AD9C"/><text x="30" y="146" fill="#111">Campagne Printemps</text><rect x="30" y="160" width="58" height="18" rx="9" fill="#DCFCE7"/><text x="59" y="172" text-anchor="middle" fill="#166534">Publiée</text></g>
+                  <g><rect x="143" y="20" width="114" height="180" rx="12" fill="#fff"/><rect x="153" y="30" width="94" height="96" rx="8" fill="#CBD5E1"/><circle cx="185" cy="64" r="12" fill="#F5F3EF"/><path d="M153 126 L189 92 L217 112 L247 84 V126Z" fill="#94A3B8"/><text x="153" y="146" fill="#111">Campagne Été</text><rect x="153" y="160" width="68" height="18" rx="9" fill="#FEF3C7"/><text x="187" y="172" text-anchor="middle" fill="#92400E">En validation</text></g>
+                  <g><rect x="266" y="20" width="114" height="180" rx="12" fill="#fff"/><rect x="276" y="30" width="94" height="96" rx="8" fill="#E7D9C9"/><circle cx="308" cy="64" r="12" fill="#F5F3EF"/><path d="M276 126 L312 92 L340 112 L370 84 V126Z" fill="#C8B49C"/><text x="276" y="146" fill="#111">Campagne Fêtes</text><rect x="276" y="160" width="60" height="18" rx="9" fill="#E0E7FF"/><text x="306" y="172" text-anchor="middle" fill="#3730A3">Planifiée</text></g>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Suivi des campagnes publicitaires</h3>
+              <p>Un outil pour suivre chaque projet de campagne et ses publications, avec les visuels associés à chaque campagne. Les équipes voient d'un coup d'œil ce qui est publié, en validation ou planifié.</p>
+              <div class="chips"><span class="chip">Excel</span><span class="chip">Suivi de projets</span><span class="chip">Automatisation</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/elsan.svg" alt="Elsan"></div>
+            <div class="when">2026<small>Santé · cliniques</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Diagramme de Gantt automatisé"><rect width="400" height="220" rx="16" fill="#EEF4FB"/>
+                <g font-family="Inter,Arial" font-size="9" fill="#4B5563" font-weight="600">
+                  <rect x="20" y="20" width="360" height="180" rx="12" fill="#fff"/>
+                  <g stroke="#EEF2F7"><line x1="130" y1="34" x2="130" y2="190"/><line x1="190" y1="34" x2="190" y2="190"/><line x1="250" y1="34" x2="250" y2="190"/><line x1="310" y1="34" x2="310" y2="190"/></g>
+                  <text x="34" y="58">Inscription</text><rect x="130" y="48" width="70" height="14" rx="7" fill="#0B4EA2" class="bar"/>
+                  <text x="34" y="86">Consultation</text><rect x="170" y="76" width="80" height="14" rx="7" fill="#3B82F6" class="bar"/>
+                  <text x="34" y="114">Examens</text><rect x="220" y="104" width="60" height="14" rx="7" fill="#60A5FA" class="bar"/>
+                  <text x="34" y="142">Analyses</text><rect x="250" y="132" width="70" height="14" rx="7" fill="#93C5FD" class="bar"/>
+                  <text x="34" y="170">Suivi</text><rect x="300" y="160" width="62" height="14" rx="7" fill="#21A366" class="bar"/>
+                  <line x1="236" y1="34" x2="236" y2="190" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Suivi de projets et parcours patient</h3>
+              <p>Le parcours patient, de l'inscription jusqu'aux analyses, était suivi dans des fichiers séparés. J'ai consolidé ces fichiers dans une base commune alimentée par un pipeline, et les diagrammes de Gantt se mettent à jour tout seuls.</p>
+              <div class="chips"><span class="chip">Excel</span><span class="chip">Pipeline de données</span><span class="chip">Gantt automatisé</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="tl-year"><span>2025</span></div>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/sanofi.svg" alt="Sanofi"></div>
+            <div class="when">Sept. 2024 → janv. 2025<small>Chef de projet BI · Gentilly</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Migration de Qlik Sense vers Power BI"><rect width="400" height="220" rx="16" fill="#F3EEFB"/>
+                <g font-family="Inter,Arial" font-size="11" font-weight="700">
+                  <rect x="20" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="20" y="40" width="140" height="28" rx="12" fill="#009845"/><text x="90" y="59" text-anchor="middle" fill="#fff">Qlik Sense</text>
+                  <rect x="36" y="130" width="14" height="34" rx="3" fill="#C7E9D3"/><rect x="56" y="112" width="14" height="52" rx="3" fill="#C7E9D3"/><rect x="76" y="122" width="14" height="42" rx="3" fill="#C7E9D3"/><rect x="96" y="96" width="14" height="68" rx="3" fill="#C7E9D3"/><rect x="116" y="104" width="14" height="60" rx="3" fill="#C7E9D3"/>
+                  <path d="M170 110 H226" stroke="#7A00E6" stroke-width="3" class="flow" stroke-dasharray="6 5"/><path d="M222 102 L232 110 L222 118" fill="none" stroke="#7A00E6" stroke-width="3"/>
+                  <rect x="240" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="240" y="40" width="140" height="28" rx="12" fill="#F2C811"/><text x="310" y="59" text-anchor="middle" fill="#0B2545">Power BI</text>
+                  <rect x="256" y="130" width="14" height="34" rx="3" fill="#F2C811"/><rect x="276" y="112" width="14" height="52" rx="3" fill="#E8A33C"/><rect x="296" y="122" width="14" height="42" rx="3" fill="#F2C811"/><rect x="316" y="96" width="14" height="68" rx="3" fill="#E8A33C"/><rect x="336" y="104" width="14" height="60" rx="3" fill="#F2C811"/>
+                  <rect x="256" y="78" width="46" height="10" rx="5" fill="#F3F4F6"/>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Migration des reportings vers Power BI</h3>
+              <p>Sanofi remplaçait Qlik Sense par Power BI. J'ai recueilli les besoins des équipes, migré et reconstruit les reportings dans Power BI, assuré leur maintenance, et accompagné les équipes de production sur Excel.</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Qlik Sense</span><span class="chip">Recueil des besoins</span><span class="chip">Excel</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="tl-year"><span>2024</span></div>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo" data-logo="excelerateur"><span class="wm wm-xl">L'Excelérateur</span></div>
+            <div class="when">Depuis juil. 2024<small>Fondateur et formateur</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Formation Excel en ligne"><rect width="400" height="220" rx="16" fill="#E8F3EC"/>
+                <rect x="20" y="20" width="230" height="180" rx="14" fill="#185C37"/><circle cx="135" cy="98" r="30" fill="#fff" opacity=".95"/><path d="M127 84 L149 98 L127 112Z" fill="#185C37"/>
+                <text x="36" y="168" font-family="Inter,Arial" font-size="13" font-weight="800" fill="#fff">Bootcamp Modern Excel</text><text x="36" y="186" font-family="Inter,Arial" font-size="10" fill="#A7E3C0">10 immersions + 4 défis</text>
+                <g font-family="Inter,Arial" font-weight="800"><rect x="262" y="20" width="118" height="54" rx="12" fill="#fff"/><text x="321" y="48" text-anchor="middle" font-size="18" fill="#185C37">~100</text><text x="321" y="64" text-anchor="middle" font-size="9" fill="#4B5563" font-weight="600">apprenants</text>
+                <rect x="262" y="83" width="118" height="54" rx="12" fill="#fff"/><text x="321" y="111" text-anchor="middle" font-size="18" fill="#185C37">200k+</text><text x="321" y="127" text-anchor="middle" font-size="9" fill="#4B5563" font-weight="600">abonnés</text>
+                <rect x="262" y="146" width="118" height="54" rx="12" fill="#fff"/><text x="321" y="174" text-anchor="middle" font-size="16" fill="#00B67A">★★★★★</text><text x="321" y="190" text-anchor="middle" font-size="9" fill="#4B5563" font-weight="600">avis Trustpilot</text></g></svg>
+            </div>
+            <div class="txt">
+              <h3>Je lance ma propre école Excel</h3>
+              <p>Je crée L'Excelérateur et son Bootcamp Modern Excel : des bases jusqu'à Power Query, Power Pivot, DAX et aux dashboards. Des masterclass suivies par des milliers de participants, des tutos suivis par plus de 200 000 personnes. Je deviens aussi intervenant en école en data visualisation et BI.</p>
+              <div class="chips"><span class="chip">Pédagogie</span><span class="chip">Modern Excel</span><span class="chip">Power Query</span><span class="chip">DAX</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo" data-logo="forvia"><span class="wm wm-forvia">FORVIA</span><span class="wm-sub">ex-Faurecia</span></div>
+            <div class="when">Oct. 2023 → juil. 2024<small>Data & BI analyst · Achats · Nanterre</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Dashboard de performance des acheteurs"><rect width="400" height="220" rx="16" fill="#EEF1F8"/>
+                <g font-family="Inter,Arial" font-weight="800">
+                  <rect x="20" y="20" width="110" height="54" rx="12" fill="#fff"/><text x="34" y="44" font-size="9" fill="#4B5563" font-weight="600">Économies</text><text x="34" y="64" font-size="17" fill="#0F1A3C">+12 %</text>
+                  <rect x="20" y="84" width="110" height="54" rx="12" fill="#fff"/><text x="34" y="108" font-size="9" fill="#4B5563" font-weight="600">Délai moyen</text><text x="34" y="128" font-size="17" fill="#0F1A3C">8 j</text>
+                  <rect x="20" y="148" width="110" height="52" rx="12" fill="#fff"/><text x="34" y="171" font-size="9" fill="#4B5563" font-weight="600">Acheteurs</text><text x="34" y="190" font-size="17" fill="#0F1A3C">48</text>
+                  <rect x="140" y="20" width="240" height="180" rx="12" fill="#fff"/><text x="156" y="42" font-size="11" fill="#0F1A3C">Performance par acheteur</text>
+                  <g class="bars"><rect x="160" y="140" width="22" height="44" rx="4" fill="#9DB0D8"/><rect x="194" y="110" width="22" height="74" rx="4" fill="#0F1A3C"/><rect x="228" y="124" width="22" height="60" rx="4" fill="#9DB0D8"/><rect x="262" y="84" width="22" height="100" rx="4" fill="#0F1A3C"/><rect x="296" y="100" width="22" height="84" rx="4" fill="#9DB0D8"/><rect x="330" y="70" width="22" height="114" rx="4" fill="#00A3E0"/></g>
+                  <polyline points="171,120 205,96 239,104 273,70 307,80 341,56" fill="none" stroke="#F2C811" stroke-width="2.5"/>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Dashboard de performance des acheteurs</h3>
+              <p>La direction achats suivait ses KPI dans un vieux fichier Excel. J'ai construit un pipeline de données Excel et Power Query, puis un dashboard Power BI interactif sur la performance des acheteurs, diffusé automatiquement aux managers.</p>
+              <div class="chips"><span class="chip">Power BI</span><span class="chip">Power Query</span><span class="chip">Modèle de données</span><span class="chip">KPI achats</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="tl-year"><span>2022</span></div>
+
+      <article class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <div class="logo"><img src="assets/logos/bnp.svg" alt="BNP Paribas"></div>
+            <div class="when">Sept. 2022 → sept. 2023<small>Data analyst · IT Group Finance · Montreuil</small></div>
+          </div>
+          <div class="tl-body">
+            <div class="ill">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Contrôle qualité des données et reporting financier"><rect width="400" height="220" rx="16" fill="#EAF6F0"/>
+                <g font-family="Inter,Arial" font-size="10" font-weight="700">
+                  <rect x="20" y="20" width="170" height="180" rx="12" fill="#fff"/><text x="36" y="44" fill="#0B2545">Contrôles qualité</text>
+                  <g fill="#4B5563" font-weight="600"><circle cx="42" cy="70" r="8" fill="#00915A"/><text x="38.5" y="74" fill="#fff" font-size="9">✓</text><rect x="58" y="65" width="110" height="9" rx="4" fill="#E5E7EB"/>
+                  <circle cx="42" cy="100" r="8" fill="#00915A"/><text x="38.5" y="104" fill="#fff" font-size="9">✓</text><rect x="58" y="95" width="90" height="9" rx="4" fill="#E5E7EB"/>
+                  <circle cx="42" cy="130" r="8" fill="#F59E0B"/><text x="39.5" y="134" fill="#fff" font-size="9">!</text><rect x="58" y="125" width="100" height="9" rx="4" fill="#E5E7EB"/>
+                  <circle cx="42" cy="160" r="8" fill="#00915A"/><text x="38.5" y="164" fill="#fff" font-size="9">✓</text><rect x="58" y="155" width="80" height="9" rx="4" fill="#E5E7EB"/></g>
+                  <rect x="200" y="20" width="180" height="180" rx="12" fill="#fff"/><text x="216" y="44" fill="#0B2545">Reporting finance</text>
+                  <polyline points="216,160 248,140 280,146 312,110 344,96 366,70" fill="none" stroke="#00915A" stroke-width="3"/>
+                  <polyline points="216,170 248,162 280,150 312,140 344,128 366,118" fill="none" stroke="#9BD4B9" stroke-width="2.5" stroke-dasharray="4 3"/>
+                  <rect x="216" y="56" width="44" height="18" rx="9" fill="#EAF6F0"/><text x="238" y="68" text-anchor="middle" fill="#00915A" font-size="9">VBA</text><rect x="266" y="56" width="58" height="18" rx="9" fill="#EAF6F0"/><text x="295" y="68" text-anchor="middle" fill="#00915A" font-size="9">Tableau</text>
+                </g></svg>
+            </div>
+            <div class="txt">
+              <h3>Qualité des données et reportings financiers</h3>
+              <p>Au sein de l'IT de la finance groupe, j'ai défini les procédures de contrôle qualité des données et leurs KPI, automatisé les reportings en VBA et construit des dashboards Excel et Tableau pour la direction financière et le contrôle de gestion.</p>
+              <div class="chips"><span class="chip">Data quality</span><span class="chip">VBA</span><span class="chip">Tableau</span><span class="chip">Contrôle de gestion</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="tl-end glass"><b>Et aussi, depuis 2024 :</b> des outils Excel de devis, facturation et planning pour des TPE, un dashboard pour un cabinet comptable, et LDC, mon application de gestion pour les petites entreprises.</div>
     </div>
   </div>
 </section>
@@ -430,6 +786,13 @@ document.querySelectorAll('.tile').forEach(t=>t.addEventListener('click',()=>{
 function close(){lb.classList.remove('open');m.innerHTML=''}
 lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('x'))close()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+// frise : apparition des cartes + remplissage de la ligne au défilement
+const items=document.querySelectorAll('.tl-item');
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io2.unobserve(e.target)}}),{threshold:.18,rootMargin:'0px 0px -8% 0px'});
+items.forEach(el=>io2.observe(el));
+const tl=document.getElementById('tl'),fill=document.getElementById('tlfill');
+function prog(){const r=tl.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh*.6-r.top)/r.height));fill.style.height=(p*100)+'%'}
+addEventListener('scroll',prog,{passive:true});addEventListener('resize',prog);prog();
 </script>
 </body>
 </html>
