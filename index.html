@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hakim Ahamziou · Consultant Data & BI, Formateur Excel & IA</title>
-<meta name="description" content="Consultant Data & BI et formateur Excel & IA. Excel, Power Query, Power BI, automatisations et IA pour L'Oréal, LVMH, Cartier, Sanofi, BNP Paribas, Forvia, Elsan et des PME.">
+<meta name="description" content="Consultant Data & BI et formateur Excel & IA. Audit et optimisation de process data : Excel, Power Query, Power BI, automatisations et IA pour L'Oréal, LVMH, Cartier, Sanofi, BNP Paribas, Forvia, Elsan et des PME.">
 <meta property="og:title" content="Hakim Ahamziou · Consultant Data & BI, Formateur Excel & IA">
-<meta property="og:description" content="Vos données Excel transformées en pilotage fiable : Power Query, Power BI, automatisations et IA. 15+ clients, 150+ élèves formés.">
+<meta property="og:description" content="Audit et optimisation de process data : Power Query, Power BI, automatisations et IA. 15+ clients, 150+ élèves formés.">
 <meta property="og:image" content="https://hakimahamziou.github.io/portfolio/assets/og.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#185C37">
@@ -261,6 +261,78 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
 .spark{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
 @keyframes tw{50%{transform:scale(.6) rotate(45deg);opacity:.6}}
 
+
+/* résultat chiffré dans les missions */
+.res{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 9px;margin:0 0 12px;padding:9px 13px;border-radius:12px;background:linear-gradient(90deg,rgba(242,200,17,.24),rgba(242,200,17,.06));border:1px solid rgba(242,200,17,.35);font-size:14px;line-height:1.4;color:var(--text);font-weight:600}
+.res b{font-size:19px;font-weight:900;color:var(--navy);letter-spacing:-.02em;white-space:nowrap}
+.res.txt b{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#7A5A00}
+.wm-ce{font-weight:800;color:var(--navy);font-size:16px;line-height:1.1;white-space:normal}
+
+/* haut de page : diplômes et CV */
+.pitch b{color:var(--navy);font-weight:700}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cred{display:inline-flex;align-items:center;gap:9px;padding:5px 12px 5px 6px;border-radius:12px;background:rgba(255,255,255,.75);border:1px solid #fff;font-size:12.5px;font-weight:700;color:var(--navy)}
+.cred img{height:22px;width:auto;max-width:64px;object-fit:contain}
+.btn-cv{color:var(--navy)}
+
+/* avis clients */
+#avis{padding-top:64px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rev{padding:24px;display:flex;flex-direction:column;gap:14px}
+.rev.big{grid-column:span 2}
+.rev-top{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:30px}
+.rev-top img{width:auto;max-width:120px;object-fit:contain}
+.stars{color:#E8A33C;letter-spacing:2px;font-size:15px}
+.letter{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);background:rgba(11,37,69,.07);padding:4px 10px;border-radius:999px}
+.rev blockquote{flex:1;font-size:15px;line-height:1.55;color:var(--text);position:relative;padding-left:22px}
+.rev blockquote::before{content:"“";position:absolute;left:-2px;top:-12px;font-size:46px;line-height:1;font-weight:900;color:var(--yellow)}
+.rev.big blockquote{font-size:17.5px;line-height:1.55;color:var(--navy);font-weight:500}
+.rev figcaption{display:flex;align-items:center;gap:10px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.rev figcaption span{flex:1;line-height:1.3}
+.rev figcaption b{display:block;color:var(--navy);font-size:14.5px}
+.rev figcaption em{font-style:normal;font-size:11.5px;font-weight:700;color:var(--green);text-align:right}
+.av{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-2),var(--green))}
+
+/* avis élèves */
+.srev-head{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:30px 0 12px;font-size:14px;color:var(--muted);font-weight:600}
+.srev-head .tp{background:linear-gradient(180deg,#FFDB4D,#F2C811);color:var(--navy);font-weight:900;padding:5px 12px;border-radius:999px}
+.srev-head a{color:var(--green);font-weight:800;text-decoration:none;margin-left:auto}
+.srevs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.srev{padding:20px;display:flex;flex-direction:column;gap:10px}
+.srev blockquote{flex:1;font-size:14px;line-height:1.55;color:var(--text)}
+.srev figcaption{font-size:12.5px;color:var(--muted)}
+.srev figcaption b{color:var(--navy)}
+
+/* offres : 4 cartes + format */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid4 .offer{padding:22px}
+.offer.first{border:1.5px solid rgba(242,200,17,.7)}
+.o-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);background:linear-gradient(180deg,#FFDB4D,#F2C811);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.sub-h{font-size:22px;color:var(--navy);font-weight:900;letter-spacing:-.02em;margin:34px 0 14px}
+.collab{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.collab>div{padding:20px}
+.collab b{display:block;font-size:17px;color:var(--navy);font-weight:800;line-height:1.25;margin:8px 0 6px}
+.collab p{font-size:14px;color:var(--muted)}
+.contact .btn-glass{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.55);color:#fff;backdrop-filter:blur(8px)}
+
+@media (max-width:1040px){
+  .grid4,.collab{grid-template-columns:1fr 1fr}
+  .revs{grid-template-columns:1fr 1fr}
+  .srevs{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .creds{margin-top:10px;gap:6px}
+  .cred{font-size:11.5px;padding:4px 10px 4px 5px}
+  .cred img{height:18px}
+  .hero .cta .btn-cv{flex:1 1 100%;background:none;border:0;box-shadow:none;backdrop-filter:none;padding:4px 0 0;color:var(--green);font-size:14px}
+  .revs{grid-template-columns:1fr}
+  .rev.big{grid-column:auto}
+  .rev.big blockquote{font-size:15.5px}
+  .rev{padding:20px}
+  .grid4,.collab{grid-template-columns:1fr}
+  .srev-head a{margin-left:0}
+}
+
 @media (prefers-reduced-motion:reduce){
   .blob,.ring,.ring img,.float,.track,.flow,.spark,.tag i{animation:none}
   .rv,.m-card{opacity:1;transform:none;transition:none}
@@ -351,6 +423,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
     <a class="brand" href="#top"><img src="assets/photo.png" alt="">Hakim Ahamziou</a>
     <ul>
       <li><a href="#missions">Missions</a></li>
+      <li><a href="#avis">Avis</a></li>
       <li><a href="#realisations">Réalisations</a></li>
       <li><a href="#formation">Formation</a></li>
       <li><a href="#offres">Offres</a></li>
@@ -367,10 +440,12 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
         <div class="who"><span class="tag"><i></i>Disponible · Paris / IDF et à distance</span></div>
         <p class="name">Hakim Ahamziou <span>Consultant Data & BI · Formateur Excel & IA</span></p>
         <h1>De vos fichiers Excel<br><em>à un pilotage fiable.</em></h1>
-        <p class="pitch">Consolidation Power Query, dashboards Power BI, automatisations et IA. J'audite, je fiabilise, j'automatise, puis je forme vos équipes.</p>
+        <p class="pitch"><b>Optimisation de vos process data</b> : consolidation Power Query, dashboards Power BI, automatisations et IA. J'audite, je fiabilise, j'automatise, puis je forme vos équipes.</p>
+        <div class="creds"><span class="cred"><img src="assets/schools/efrei.svg" alt="EFREI"><span>Master Data Engineering &amp; IA</span></span><span class="cred"><img src="assets/schools/inseec.png" alt="INSEEC"><span>Master Finance</span></span></div>
         <div class="cta">
           <a class="btn btn-green" href="#missions">Retraçons mes missions ↓</a>
           <a class="btn btn-yellow" href="#contact">Discuter de votre projet</a>
+          <a class="btn btn-glass btn-cv" href="assets/CV_Hakim_Ahamziou.pdf" download>⤓ Mon CV</a>
         </div>
       </div>
       <div class="hero-vis">
@@ -414,6 +489,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                 <rect x="310" y="128" width="12" height="28" rx="3" fill="#9E1F23"/><rect x="328" y="108" width="12" height="48" rx="3" fill="#C9A86B"/><rect x="346" y="92" width="12" height="64" rx="3" fill="#9E1F23"/><rect x="364" y="116" width="10" height="40" rx="3" fill="#C9A86B"/>
                 <rect x="310" y="64" width="50" height="8" rx="4" fill="#E7DED3"/></svg></div>
     <h3>Je centralise les données financières de Cartier dans une base unique et fiable.</h3>
+    <p class="res txt"><b>Objectif</b><span>réduire nettement le temps passé à consolider les données financières.</span></p>
     <ul class="bl"><li><b>Collecte</b>les fichiers financiers éparpillés sont rassemblés sur SharePoint.</li><li><b>Transformation</b>Power Query nettoie, harmonise et consolide les données.</li><li><b>Restitution</b>une base prête pour le reporting BI de la direction financière.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div>
@@ -424,7 +500,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
   <div class="m-card glass">
     <div class="m-head">
       <div class="logo"><img src="assets/logos/loreal.svg" alt="L'Oréal" style="height:26px"></div>
-      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Dermatological Beauty</small></div>
+      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>Mars 2026</b><small>Dermatological Beauty</small></div>
     </div>
     <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Pyramide d'assortiment et linéaire en pharmacie"><rect width="400" height="220" rx="16" fill="#EEF6F1"/>
                 <g font-family="Inter,Arial" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">
@@ -442,6 +518,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                 <rect x="240" y="156" width="62" height="24" rx="12" fill="#DCFCE7"/><text x="271" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#166534">✓ Garder</text>
                 <rect x="308" y="156" width="64" height="24" rx="12" fill="#FEE2E2"/><text x="340" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#991B1B">✕ Retirer</text></svg></div>
     <h3>J'ai créé l'outil qui permet à L'Oréal de savoir quels produits seront vendus en pharmacie.</h3>
+    <p class="res"><b>≈ +10 %</b><span>de marge prévisionnelle sur les produits dermatologiques.</span></p>
     <ul class="bl"><li><b>Consolidation</b>les données de plusieurs pays réunies automatiquement avec Power Query.</li><li><b>Décision</b>pyramide d’assortiment et règles claires pour garder ou retirer une référence en linéaire.</li><li><b>Adoption</b>formation des équipes internationales, outil simple à maintenir.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Pivot</span></div>
@@ -456,6 +533,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
     </div>
     <button class="m-visual shot" data-src="assets/lvmh-suivi-chartes.webp" data-cap="LVMH Fragrance Brands · Outil de suivi des chartes et de la photogravure"><img src="assets/lvmh-suivi-chartes.webp" alt="LVMH Fragrance Brands · Outil de suivi des chartes et de la photogravure" loading="lazy"><span class="blurnote">Données floutées</span><span class="zoom">⤢</span></button>
     <h3>J'ai refondu l'outil de suivi des chartes graphiques et ses dashboards de direction.</h3>
+    <p class="res txt"><b>Résultat</b><span>un suivi des lancements optimisé, lisible en un coup d’œil par la direction.</span></p>
     <ul class="bl"><li><b>Structure</b>colonnes réorganisées selon la logique métier, blocs charte / photogravure / référents, nouveaux champs (statuts, campagnes, visuels).</li><li><b>Lisibilité</b>regroupements par campagne et type de visuel, statuts clairs, vignettes produits intégrées.</li><li><b>Dashboards</b>KPI clés repensés, taux de retard, visuels pensés pour une lecture rapide par la direction.</li><li><b>Passation</b>ajustements après retours, finalisation et formation des équipes.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
@@ -466,7 +544,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
   <div class="m-card glass">
     <div class="m-head">
       <div class="logo"><img src="assets/logos/sanofi.svg" alt="Sanofi" style="height:30px"></div>
-      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2024 → janv. 2025</b><small>Chef de projet BI · Gentilly</small></div>
+      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2024 → sept. 2025</b><small>Chef de projet BI · Gentilly</small></div>
     </div>
     <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Migration de Qlik Sense vers Power BI"><rect width="400" height="220" rx="16" fill="#F3EEFB"/>
                 <g font-family="Inter,Arial" font-size="11" font-weight="700">
@@ -478,6 +556,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <rect x="256" y="78" width="46" height="10" rx="5" fill="#F3F4F6"/>
                 </g></svg></div>
     <h3>J'ai piloté la migration des reportings de Qlik Sense vers Power BI.</h3>
+    <p class="res txt"><b>Résultat</b><span>un accès plus rapide et plus fiable aux indicateurs de production.</span></p>
     <ul class="bl"><li><b>Recueil</b>des besoins en data visualisation auprès des équipes.</li><li><b>Migration</b>reconstruction des rapports dans Power BI, puis maintenance.</li><li><b>Support</b>accompagnement Excel des équipes de production.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/qlik.svg" alt="" loading="lazy">Qlik Sense</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
@@ -500,9 +579,25 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <polyline points="171,120 205,96 239,104 273,70 307,80 341,56" fill="none" stroke="#F2C811" stroke-width="2.5"/>
                 </g></svg></div>
     <h3>J'ai remplacé l'ancien outil Excel des achats par un dashboard Power BI.</h3>
+    <p class="res"><b>2× plus rapide</b><span>pour analyser la performance des acheteurs, sans recherche manuelle dans les fichiers.</span></p>
     <ul class="bl"><li><b>Pipeline</b>données Excel transformées avec Power Query dans un modèle de données propre.</li><li><b>Dashboard</b>KPI de performance des acheteurs, interactif et filtrable.</li><li><b>Diffusion</b>envoi automatisé aux managers.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
+  </div>
+</article>
+<article class="tl-item" style="order:10">
+  <div class="tl-dot"></div>
+  <div class="m-card glass">
+    <div class="m-head">
+      <div class="logo"><span class="wm wm-ce">Le Chemin<br>de l’Espoir</span></div>
+      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2021 → août 2022</b><small>Analyste financier</small></div>
+    </div>
+    
+    <h3>J'ai démarré côté finance : comptabilité, fiscalité et trésorerie.</h3>
+    
+    <ul class="bl"><li><b>Comptabilité</b>supervision des activités comptables.</li><li><b>Fiscalité</b>contrôle et déclarations fiscales.</li><li><b>Trésorerie</b>prévision des besoins de trésorerie, participation à l’évaluation d’entreprises.</li></ul>
+    
+    <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
   </div>
 </article>
       </div>
@@ -524,6 +619,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <g><rect x="296" y="62" width="84" height="138" rx="10" fill="#fff"/><text x="338" y="112" text-anchor="middle" font-size="26">✈</text><text x="338" y="140" text-anchor="middle" font-weight="700" fill="#0B2545">Aéroports</text><text x="338" y="156" text-anchor="middle">Clients · Marques</text></g>
                 </g></svg></div>
     <h3>J'ai simplifié le lancement des nouveautés Travel Retail, avec un catalogue généré par l'IA.</h3>
+    
     <ul class="bl"><li><b>Audit</b>des process data et des outils existants (SharePoint, Excel, Power BI).</li><li><b>Outils</b>ajout et contrôle des nouveautés, référentiel clients, aéroports et marques, contrôle des données financières.</li><li><b>IA & automatisation</b>catalogue « One Catalog » généré par IA, flux Power Automate, One-Pagers automatiques.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span></div>
@@ -548,6 +644,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <path d="M288 170 c8 -14 14 6 22 -6 s12 4 22 -4" stroke="#0B2545" stroke-width="2" fill="none"/>
                 </g></svg></div>
     <h3>Les contrats de fiducie du cabinet se rédigent désormais automatiquement grâce à l'IA.</h3>
+    
     <ul class="bl"><li><b>Extraction</b>l'IA lit les devis et les comptes rendus et en extrait les informations utiles.</li><li><b>Génération</b>Power Automate remplit le modèle de contrat Word via API.</li><li><b>Résultat</b>un contrat prêt à relire, sans ressaisie manuelle.</li></ul>
     
     <div class="tools"><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span><span class="tool"><img src="assets/tools/word.svg" alt="" loading="lazy">Word</span><span class="tool"><i class="ti ti-api">{}</i>API</span></div>
@@ -562,6 +659,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
     </div>
     <button class="m-visual shot" data-src="assets/elsan-gantt.webp" data-cap="Elsan · Diagramme de Gantt dynamique par jalon"><img src="assets/elsan-gantt.webp" alt="Elsan · Diagramme de Gantt dynamique par jalon" loading="lazy"><span class="blurnote">Projets floutés</span><span class="zoom">⤢</span></button>
     <h3>J'ai centralisé le suivi multi-projets d'Elsan avec des diagrammes de Gantt dynamiques.</h3>
+    
     <ul class="bl"><li><b>Cadrage</b>analyse des onglets et des référentiels, structure cible validée avec le métier.</li><li><b>Fiabilisation</b>référentiels harmonisés dans une base unique, traitements Power Query, structure sécurisée.</li><li><b>Pilotage</b>indicateurs, segments, Gantt par projet et par étape, recalcul automatique des retards.</li><li><b>Passation</b>tests métier, guide utilisateur et formation des équipes.</li></ul>
     <div class="phases" aria-label="Déroulé de la mission en 11 jours"><span style="flex:1">Cadrage</span><span style="flex:3">Données</span><span style="flex:4">Pilotage & Gantt</span><span style="flex:1">UX</span><span style="flex:1">Tests</span><span style="flex:1">Formation</span></div><p class="phases-cap">Déroulé en 11 jours</p>
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel 365</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
@@ -576,6 +674,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
     </div>
     <button class="m-visual shot" data-src="assets/bootcamp/apercu.webp" data-cap="Bootcamp Modern Excel · extraits du programme"><img src="assets/bootcamp/apercu.webp" alt="Bootcamp Modern Excel · extraits du programme" loading="lazy"><span class="zoom">⤢</span></button>
     <h3>J'ai fondé L'Excelérateur, ma propre école de formation Excel.</h3>
+    <p class="res"><b>4,7/5</b><span>sur Trustpilot, plus de 30 avis d’élèves.</span></p>
     <ul class="bl"><li><b>Bootcamp</b>la formation Excel de A à Z en 10 immersions, jusqu’à Power Query, Power Pivot et aux dashboards.</li><li><b>Communauté</b>des milliers de participants à mes masterclass, plus de 150 élèves formés.</li><li><b>Enseignement</b>intervenant en école en data visualisation et BI.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Pivot</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div><a class="more" href="#formation">Voir la formation →</a>
@@ -586,10 +685,11 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
   <div class="m-card glass">
     <div class="m-head">
       <div class="logo"><img src="assets/logos/bnp.png" alt="BNP Paribas" style="height:52px"></div>
-      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2022 → sept. 2023</b><small>Data analyst · IT Group Finance</small></div>
+      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2022 → août 2023</b><small>Data & BI analyst · ITG Finance</small></div>
     </div>
     <button class="m-visual shot" data-src="assets/bnp-dashboard.webp" data-cap="BNP Paribas · Dashboard de pilotage ITG Finance"><img src="assets/bnp-dashboard.webp" alt="BNP Paribas · Dashboard de pilotage ITG Finance" loading="lazy"><span class="zoom">⤢</span></button>
     <h3>J'ai fiabilisé les données et automatisé les reportings de la finance groupe.</h3>
+    <p class="res txt"><b>Résultat</b><span>une qualité des données nettement améliorée et des équipes finance plus à l’aise avec le digital.</span></p>
     <ul class="bl"><li><b>Qualité</b>procédures de contrôle des données et KPI associés.</li><li><b>Automatisation</b>reportings automatisés en VBA.</li><li><b>Dashboards</b>tableaux de bord Excel et Tableau pour la direction financière et le contrôle de gestion.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/vba.svg" alt="" loading="lazy">VBA</span><span class="tool"><img src="assets/tools/tableau.svg" alt="" loading="lazy">Tableau</span></div>
@@ -597,6 +697,36 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
 </article>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="avis">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="kicker">Avis clients</p><h2>Ce qu'ils <em>en disent</em></h2></div>
+      <p class="sec-side">Avis laissés sur Malt et lettre de recommandation. <a href="https://www.malt.fr/profile/hakimahamziou" target="_blank" rel="noopener">Voir mes avis Malt →</a></p>
+    </div>
+    <div class="revs"><figure class="rev glass rv big">
+  <div class="rev-top"><img src="assets/logos/loreal.svg" alt="L'Oréal" style="height:17px"><span class="stars" aria-label="5 sur 5">★★★★★</span></div>
+  <blockquote>Hakim est reparti d'un outil Excel existant (Matrice d'Assortiment Produit) pour en faire la refonte : de la partie compréhension &amp; input des données pays, très complexes, jusqu'à la création des pyramides d'assortiment et des dashboards de pilotage. Hakim a rendu le projet dans le délai malgré la complexité des données […]. Hakim nous a livré un outil complet, avec une vraie maîtrise des fonctionnalités Excel. Je recommande vivement Hakim.</blockquote>
+  <figcaption><span><b>Louise</b>RGM Manager · L'Oréal Dermatological Beauty</span><em>Avis Malt · avril 2026</em></figcaption>
+</figure><figure class="rev glass rv">
+  <div class="rev-top"><img src="assets/logos/bnp.png" alt="BNP Paribas" style="height:30px"><span class="letter">Lettre de recommandation</span></div>
+  <blockquote>Avec rigueur, persévérance et en étant force de proposition, il a notamment mis en place des KPI pour la direction financière et a développé des macros VBA complexes. Il a mené ses missions de bout en bout […] et a livré des travaux de qualité en créant des modes opératoires et formations pour les collaborateurs.</blockquote>
+  <figcaption><span><b>Pascaline B.</b>Chef de projet · BNP Paribas</span><em>Juillet 2023</em></figcaption>
+</figure><figure class="rev glass rv">
+  <div class="rev-top"><img src="assets/logos/lvmh.png" alt="LVMH" style="height:18px"><span class="stars" aria-label="5 sur 5">★★★★★</span></div>
+  <blockquote>Hakim est sympathique, flexible, disponible, à l'écoute et n'a pas eu de problème à récupérer et finaliser un sujet laissé en suspens par un autre prestataire.</blockquote>
+  <figcaption><span><b>Elsa</b>Head of the Creative Studio · LVMH Fragrance Brands</span><em>Avis Malt · juin 2026</em></figcaption>
+</figure><figure class="rev glass rv">
+  <div class="rev-top"><span></span><span class="stars" aria-label="5 sur 5">★★★★★</span></div>
+  <blockquote>Il a parfaitement compris ma demande et a su livrer le travail de façon claire, précise et totalement adaptée à mes besoins. Ses explications vidéo étaient très pédagogiques et m'ont permis de bien prendre en main l'outil. […] Je recommande à 100 % !</blockquote>
+  <figcaption><i class="av">M</i><span><b>Manon</b>CAAG</span><em>Avis Malt · août 2025</em></figcaption>
+</figure><figure class="rev glass rv">
+  <div class="rev-top"><span></span><span class="stars" aria-label="5 sur 5">★★★★★</span></div>
+  <blockquote>Travail rapide et efficace, le planning correspond parfaitement à mes besoins. Très professionnel et à l'écoute, je recommande vivement.</blockquote>
+  <figcaption><i class="av">A</i><span><b>Amine</b>CMBS Étanche</span><em>Avis Malt · sept. 2025</em></figcaption>
+</figure></div>
   </div>
 </section>
 
@@ -640,7 +770,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
           <p class="boot-eyebrow">La formation Excel de A à Z</p>
           <h3>Bootcamp<br>Modern Excel</h3>
           <p>De la logique d'Excel jusqu'aux dashboards professionnels : formules, Modern Excel 365, Power Query, TCD, Power Pivot, DAX et data visualisation. Pour les débutants comme pour ceux qui veulent passer un cap.</p>
-          <a class="btn btn-yellow" href="https://fr.trustpilot.com/review/lexcelerateur.com" target="_blank" rel="noopener" style="margin-top:22px">★ Lire les avis Trustpilot</a>
+          <a class="btn btn-yellow" href="https://fr.trustpilot.com/review/lexcelerateur.com" target="_blank" rel="noopener" style="margin-top:22px">★ 4,7/5 · Lire les avis Trustpilot</a>
         </div>
         <div class="xl-tile"><img src="assets/tools/excel.svg" alt="Excel"></div>
       </div>
@@ -651,6 +781,8 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
     </div>
     <div class="imm rv" aria-label="Les 10 immersions du bootcamp"><img src="assets/bootcamp/immersion-1.webp" alt="Immersion 1 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-2.webp" alt="Immersion 2 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-3.webp" alt="Immersion 3 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-4.webp" alt="Immersion 4 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-5.webp" alt="Immersion 5 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-6.webp" alt="Immersion 6 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-7.webp" alt="Immersion 7 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-8.webp" alt="Immersion 8 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-9.webp" alt="Immersion 9 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-10.webp" alt="Immersion 10 du Bootcamp Modern Excel" loading="lazy"></div>
     <p class="imm-hint">Faites défiler pour voir les 10 immersions →</p>
+    <div class="srev-head rv"><span class="tp">★ 4,7/5</span><span>sur Trustpilot · plus de 30 avis d'élèves</span><a href="https://fr.trustpilot.com/review/lexcelerateur.com" target="_blank" rel="noopener">Tous les avis →</a></div>
+    <div class="srevs"><figure class="srev glass rv"><span class="stars" aria-label="5 sur 5">★★★★★</span><blockquote>J'exerce dans la banque depuis plus de 17 ans et […] travaille beaucoup sur Excel. […] Tout paraît plus simple […] avec un gain de temps extraordinaire (efficacité et rapidité).</blockquote><figcaption><b>Mamadou</b> · juin 2026</figcaption></figure><figure class="srev glass rv"><span class="stars" aria-label="5 sur 5">★★★★★</span><blockquote>Les challenges proposés sont directement calqués de la réalité […]. La partie Power Query est bien structurée et nous propulse vers l'expertise. […] Hakim se démarque en vulgarisant à bon escient les concepts clefs et transmet un savoir-faire terrain directement utile en entreprise.</blockquote><figcaption><b>Fayma B.</b> · janv. 2026</figcaption></figure><figure class="srev glass rv"><span class="stars" aria-label="5 sur 5">★★★★★</span><blockquote>J'ai apprécié la disponibilité d'Hakim et la progression pédagogique du coaching : des rappels des bases les plus utiles d'Excel à la data viz. Des explications claires, structurées, des exercices d'application bien pensés […].</blockquote><figcaption><b>Sandrine M.-Z.</b> · févr. 2026</figcaption></figure></div>
 
     <div class="schools">
       <div class="school glass rv">
@@ -672,7 +804,13 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <div><p class="kicker">Offres</p><h2>Ce que je peux faire <em>pour vous</em></h2></div>
       <p class="sec-side">Audit, fiabilisation, automatisation, puis transmission à vos équipes.</p>
     </div>
-    <div class="grid3">
+    <div class="grid4">
+      <div class="offer glass rv first">
+        <span class="o-tag">Pour démarrer</span>
+        <h3>Audit & process data</h3><p class="for">Directions financières, achats, équipes métier</p>
+        <ul class="bl"><li><b>Cartographie</b>flux, fichiers et sources : qui fait quoi, où ça casse</li><li><b>Qualité</b>contrôles, doublons, écarts, règles de gestion</li><li><b>Référentiels</b>produits, clients, codes communs à tous les outils</li><li><b>Plan d’action</b>priorités, documentation, modes opératoires</li></ul>
+        <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div>
+      </div>
       <div class="offer glass rv">
         <h3>BI & Power BI</h3><p class="for">Directions financières, achats, grands groupes</p>
         <ul class="bl"><li><b>Dashboards</b>Power BI et KPI de pilotage</li><li><b>Modélisation</b>modèles de données et DAX</li><li><b>Migration</b>de Qlik Sense ou Tableau vers Power BI</li></ul>
@@ -698,6 +836,13 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <i>→</i>
       <div><b>4</b><span>Transmission</span><small>formation et documentation</small></div>
     </div>
+    <h3 class="sub-h rv">Comment on travaille ensemble</h3>
+    <div class="collab">
+      <div class="glass rv"><span class="s-k">Lieu</span><b>Sur site ou à distance</b><p>Paris et Île-de-France, de 2 à 5 jours par semaine sur site.</p></div>
+      <div class="glass rv"><span class="s-k">Format</span><b>Régie ou forfait</b><p>Au jour (TJM) ou au forfait pour un livrable défini, via Malt ou en direct.</p></div>
+      <div class="glass rv"><span class="s-k">Durée</span><b>De quelques jours à plusieurs mois</b><p>Exemple : Elsan, de l'audit à la formation en 11 jours.</p></div>
+      <div class="glass rv"><span class="s-k">Démarrage</span><b>Un échange pour cadrer</b><p>Puis une proposition écrite : périmètre, délai et prix.</p></div>
+    </div>
   </div>
 </section>
 
@@ -711,6 +856,7 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
         <a class="btn btn-yellow" href="mailto:ahamziou.hakim@gmail.com">M'écrire</a>
         <a class="btn btn-malt" href="https://www.malt.fr/profile/hakimahamziou" target="_blank" rel="noopener">Mon profil Malt</a>
         <a class="btn btn-li" href="https://www.linkedin.com/in/hakim-ahamziou-a605a3188" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-glass" href="assets/CV_Hakim_Ahamziou.pdf" download>⤓ Télécharger mon CV</a>
       </div>
       <p class="coords"><a href="tel:+33651430688">06 51 43 06 88</a> · <a href="mailto:ahamziou.hakim@gmail.com">ahamziou.hakim@gmail.com</a></p>
     </div>
