@@ -493,6 +493,19 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
   .res b{font-size:17px}
 }
 
+/* résultats en phrase, étapes Elsan, double logo */
+.res strong{font-weight:900;color:var(--navy)}
+.phases span{padding:0;height:10px}
+.ph-legend{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:4px 10px;margin-top:8px;font-size:12px;color:var(--muted);font-weight:600}
+.ph-legend li{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.ph-legend i{flex:none;width:9px;height:9px;border-radius:3px;background:var(--green-2)}
+.ph-legend b{color:var(--navy)}
+.ph-legend li:nth-child(2) i{background:#1C8A55}.ph-legend li:nth-child(3) i{background:var(--green)}.ph-legend li:nth-child(4) i{background:#3FBF7F}.ph-legend li:nth-child(5) i{background:#E8A33C}.ph-legend li:nth-child(6) i{background:#F2C811}
+.phases-cap{margin-top:6px}
+.d-ic.duo{width:auto;padding:0 8px;gap:5px;display:flex;align-items:center}
+.d-ic.duo img{width:22px;height:22px}
+@media (max-width:420px){.ph-legend{grid-template-columns:1fr 1fr}}
+
 </style>
 </head>
 <body>
@@ -517,12 +530,12 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <div class="hero-txt">
         <div class="who"><span class="tag"><i></i>Disponible · Paris / IDF et à distance</span></div>
         <p class="name">Hakim Ahamziou <span>Consultant Data & BI · Formateur Excel</span></p>
-        <h1>De vos fichiers Excel<br><em>à un pilotage fiable.</em></h1>
+        <h1>De vos données brutes<br><em>à un pilotage fiable.</em></h1>
         <p class="pitch">J'optimise vos process data, de l'audit à la formation.</p>
         <div class="creds"><span class="cred"><img src="assets/schools/efrei.svg" alt="EFREI"><span>Master Data & IA</span></span><span class="cred"><img src="assets/schools/inseec.png" alt="INSEEC"><span>Master Finance</span></span></div>
         <div class="doors">
           <a class="door door-data" href="#missions" data-space="data">
-            <span class="d-ic"><img src="assets/tools/powerbi.svg" alt=""></span>
+            <span class="d-ic duo"><img src="assets/tools/excel.svg" alt=""><img src="assets/tools/powerbi.svg" alt=""></span>
             <span class="d-tx"><b>Freelance Data & BI</b><small>Missions, offres, avis</small></span><i>→</i>
           </a>
           <a class="door door-form" href="#formation" data-space="formation">
@@ -579,14 +592,29 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                 <rect x="296" y="50" width="86" height="120" rx="12" fill="#fff" stroke="#E7DED3"/>
                 <rect x="310" y="128" width="12" height="28" rx="3" fill="#9E1F23"/><rect x="328" y="108" width="12" height="48" rx="3" fill="#C9A86B"/><rect x="346" y="92" width="12" height="64" rx="3" fill="#9E1F23"/><rect x="364" y="116" width="10" height="40" rx="3" fill="#C9A86B"/>
                 <rect x="310" y="64" width="50" height="8" rx="4" fill="#E7DED3"/></svg></div>
-    <h3>Une base financière unique et fiable</h3>
-    <p class="res txt"><b>Objectif</b><span>consolider plus vite, sans erreur</span></p>
-    <ul class="bl"><li><b>Collecte</b>fichiers réunis sur SharePoint</li><li><b>Transformation</b>consolidation Power Query</li><li><b>Restitution</b>une base prête pour la BI</li></ul>
+    <h3>Je centralise les données financières de Cartier dans une base unique et fiable.</h3>
+    <p class="res txt"><b>Objectif</b><span>Consolider plus vite, sans erreur.</span></p>
+    <ul class="bl"><li><b>Collecte</b>Les fichiers sont réunis sur SharePoint.</li><li><b>Transformation</b>Power Query nettoie et consolide.</li><li><b>Restitution</b>La base est prête pour la BI.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div>
   </div>
 </article>
 <article class="tl-item" style="order:2">
+  <div class="tl-dot"></div>
+  <div class="m-card glass">
+    <div class="m-head">
+      <div class="logo"><img src="assets/logos/elsan.svg" alt="Elsan" style="height:30px"></div>
+      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Santé</small></div>
+    </div>
+    <button class="m-visual shot" data-src="assets/elsan-gantt.webp" data-cap="Elsan · Gantt dynamique par jalon"><img src="assets/elsan-gantt.webp" alt="Elsan · Gantt dynamique par jalon" loading="lazy"><span class="blurnote">Projets floutés</span><span class="zoom">⤢</span></button>
+    <h3>J'ai réuni le suivi de tous les projets d'Elsan dans un seul outil, avec des Gantt automatiques.</h3>
+    
+    <ul class="bl"><li><b>Fiabilisation</b>Les référentiels sont réunis dans une base.</li><li><b>Pilotage</b>Le Gantt et les retards se calculent seuls.</li><li><b>Passation</b>J'ai testé, documenté et formé les équipes.</li></ul>
+    <div class="phases" aria-hidden="true"><span style="flex:1"></span><span style="flex:3"></span><span style="flex:4"></span><span style="flex:1"></span><span style="flex:1"></span><span style="flex:1"></span></div><ul class="ph-legend"><li><i></i>Cadrage <b>1 j</b></li><li><i></i>Données <b>3 j</b></li><li><i></i>Pilotage & Gantt <b>4 j</b></li><li><i></i>UX <b>1 j</b></li><li><i></i>Tests <b>1 j</b></li><li><i></i>Formation <b>1 j</b></li></ul><p class="phases-cap">Mission livrée en 11 jours.</p>
+    <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
+  </div>
+</article>
+<article class="tl-item" style="order:4">
   <div class="tl-dot"></div>
   <div class="m-card glass">
     <div class="m-head">
@@ -608,49 +636,36 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                 <rect x="238" y="138" width="134" height="4" fill="#CBD5E1"/></g>
                 <rect x="240" y="156" width="62" height="24" rx="12" fill="#DCFCE7"/><text x="271" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#166534">✓ Garder</text>
                 <rect x="308" y="156" width="64" height="24" rx="12" fill="#FEE2E2"/><text x="340" y="172" text-anchor="middle" font-family="Inter,Arial" font-size="10" font-weight="700" fill="#991B1B">✕ Retirer</text></svg></div>
-    <h3>L'outil qui choisit les produits en pharmacie</h3>
-    <p class="res"><b>≈ +10 %</b><span>de marge prévisionnelle</span></p>
-    <ul class="bl"><li><b>Consolidation</b>données multi-pays, Power Query</li><li><b>Décision</b>pyramide d’assortiment</li><li><b>Adoption</b>équipes internationales formées</li></ul>
+    <h3>J'ai conçu l'outil qui permet à L'Oréal de choisir les produits dermatologiques vendus en pharmacie.</h3>
+    <p class="res txt"><b>Résultat</b><span>Environ <strong>+10 %</strong> de marge prévisionnelle.</span></p>
+    <ul class="bl"><li><b>Consolidation</b>Power Query réunit les données des pays.</li><li><b>Décision</b>Une pyramide d'assortiment guide les choix.</li><li><b>Adoption</b>Les équipes internationales sont formées.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Pivot</span></div>
-  </div>
-</article>
-<article class="tl-item" style="order:4">
-  <div class="tl-dot"></div>
-  <div class="m-card glass">
-    <div class="m-head">
-      <div class="logo"><img src="assets/logos/lvmh.png" alt="LVMH" style="height:28px"><span class="wm-sub">Fragrance Brands</span></div>
-      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Parfums & cosmétiques</small></div>
-    </div>
-    <button class="m-visual shot" data-src="assets/lvmh-suivi-chartes.webp" data-cap="LVMH Fragrance Brands · Suivi des chartes et de la photogravure"><img src="assets/lvmh-suivi-chartes.webp" alt="LVMH Fragrance Brands · Suivi des chartes et de la photogravure" loading="lazy"><span class="blurnote">Données floutées</span><span class="zoom">⤢</span></button>
-    <h3>Le suivi des chartes, enfin lisible</h3>
-    <p class="res txt"><b>Résultat</b><span>suivi des lancements optimisé</span></p>
-    <ul class="bl"><li><b>Structure</b>colonnes et champs repensés</li><li><b>Lisibilité</b>campagnes, statuts, vignettes</li><li><b>Dashboards</b>KPI clés pour la direction</li></ul>
-    
-    <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
   </div>
 </article>
 <article class="tl-item" style="order:6">
   <div class="tl-dot"></div>
   <div class="m-card glass">
     <div class="m-head">
-      <div class="logo"><img src="assets/logos/sanofi.svg" alt="Sanofi" style="height:30px"></div>
-      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2024 → sept. 2025</b><small>Chef de projet BI</small></div>
+      <div class="logo"><span class="wm wm-carve">CARVE</span><span class="wm-sub">Avocats</span></div>
+      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2024</b><small>Cabinet d'avocats</small></div>
     </div>
-    <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Migration de Qlik Sense vers Power BI"><rect width="400" height="220" rx="16" fill="#F3EEFB"/>
-                <g font-family="Inter,Arial" font-size="11" font-weight="700">
-                  <rect x="20" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="20" y="40" width="140" height="28" rx="12" fill="#009845"/><text x="90" y="59" text-anchor="middle" fill="#fff">Qlik Sense</text>
-                  <rect x="36" y="130" width="14" height="34" rx="3" fill="#C7E9D3"/><rect x="56" y="112" width="14" height="52" rx="3" fill="#C7E9D3"/><rect x="76" y="122" width="14" height="42" rx="3" fill="#C7E9D3"/><rect x="96" y="96" width="14" height="68" rx="3" fill="#C7E9D3"/><rect x="116" y="104" width="14" height="60" rx="3" fill="#C7E9D3"/>
-                  <path d="M170 110 H226" stroke="#7A00E6" stroke-width="3" class="flow" stroke-dasharray="6 5"/><path d="M222 102 L232 110 L222 118" fill="none" stroke="#7A00E6" stroke-width="3"/>
-                  <rect x="240" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="240" y="40" width="140" height="28" rx="12" fill="#F2C811"/><text x="310" y="59" text-anchor="middle" fill="#0B2545">Power BI</text>
-                  <rect x="256" y="130" width="14" height="34" rx="3" fill="#F2C811"/><rect x="276" y="112" width="14" height="52" rx="3" fill="#E8A33C"/><rect x="296" y="122" width="14" height="42" rx="3" fill="#F2C811"/><rect x="316" y="96" width="14" height="68" rx="3" fill="#E8A33C"/><rect x="336" y="104" width="14" height="60" rx="3" fill="#F2C811"/>
-                  <rect x="256" y="78" width="46" height="10" rx="5" fill="#F3F4F6"/>
+    <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Devis et compte rendu transformés en contrat par l'IA"><rect width="400" height="220" rx="16" fill="#F3F4F6"/>
+                <g font-family="Inter,Arial" font-size="10" font-weight="700">
+                  <rect x="20" y="30" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="58" text-anchor="middle" fill="#0B2545">Devis</text><rect x="34" y="70" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="82" width="38" height="6" rx="3" fill="#E5E7EB"/>
+                  <rect x="20" y="120" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="148" text-anchor="middle" fill="#0B2545">Compte rendu</text><rect x="34" y="160" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="172" width="38" height="6" rx="3" fill="#E5E7EB"/>
+                  <path d="M104 65 C140 65 140 110 162 110 M104 155 C140 155 140 110 162 110" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-dasharray="5 5" class="flow"/>
+                  <circle cx="196" cy="110" r="34" fill="#8B5CF6"/><text x="196" y="106" text-anchor="middle" fill="#fff" font-size="13">IA</text><text x="196" y="122" text-anchor="middle" fill="#EDE9FE" font-size="8">Power Automate</text>
+                  <path d="M232 110 H262" stroke="#0B2545" stroke-width="2.5" stroke-dasharray="5 5" class="flow"/>
+                  <rect x="266" y="22" width="112" height="176" rx="10" fill="#fff" stroke="#2B579A" stroke-width="2"/><rect x="266" y="22" width="112" height="26" rx="10" fill="#2B579A"/><text x="322" y="40" text-anchor="middle" fill="#fff">Contrat Word</text>
+                  <rect x="280" y="62" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="76" width="70" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="90" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="104" width="60" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="118" width="84" height="6" rx="3" fill="#E5E7EB"/>
+                  <path d="M288 170 c8 -14 14 6 22 -6 s12 4 22 -4" stroke="#0B2545" stroke-width="2" fill="none"/>
                 </g></svg></div>
-    <h3>Migration de Qlik Sense vers Power BI</h3>
-    <p class="res txt"><b>Résultat</b><span>indicateurs plus rapides et fiables</span></p>
-    <ul class="bl"><li><b>Recueil</b>besoins des équipes en usine</li><li><b>Migration</b>rapports refaits dans Power BI</li><li><b>Support</b>Excel pour la production</li></ul>
+    <h3>J'ai automatisé la rédaction des contrats de fiducie du cabinet grâce à l'IA.</h3>
     
-    <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/qlik.svg" alt="" loading="lazy">Qlik Sense</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
+    <ul class="bl"><li><b>Extraction</b>L'IA lit les devis et les comptes rendus.</li><li><b>Génération</b>Power Automate remplit le contrat Word.</li><li><b>Résultat</b>Un contrat prêt, sans aucune ressaisie.</li></ul>
+    
+    <div class="tools"><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span><span class="tool"><img src="assets/tools/word.svg" alt="" loading="lazy">Word</span><span class="tool"><i class="ti ti-api">{}</i>API</span></div>
   </div>
 </article>
 <article class="tl-item" style="order:8">
@@ -669,9 +684,9 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <g class="bars"><rect x="160" y="140" width="22" height="44" rx="4" fill="#9DB0D8"/><rect x="194" y="110" width="22" height="74" rx="4" fill="#0F1A3C"/><rect x="228" y="124" width="22" height="60" rx="4" fill="#9DB0D8"/><rect x="262" y="84" width="22" height="100" rx="4" fill="#0F1A3C"/><rect x="296" y="100" width="22" height="84" rx="4" fill="#9DB0D8"/><rect x="330" y="70" width="22" height="114" rx="4" fill="#00A3E0"/></g>
                   <polyline points="171,120 205,96 239,104 273,70 307,80 341,56" fill="none" stroke="#F2C811" stroke-width="2.5"/>
                 </g></svg></div>
-    <h3>Un dashboard Power BI pour les achats</h3>
-    <p class="res"><b>2× plus rapide</b><span>pour analyser les achats</span></p>
-    <ul class="bl"><li><b>Pipeline</b>Power Query, modèle propre</li><li><b>Dashboard</b>KPI de performance des acheteurs</li><li><b>Diffusion</b>envoi automatique aux managers</li></ul>
+    <h3>J'ai remplacé l'ancien outil Excel des acheteurs par un dashboard Power BI interactif.</h3>
+    <p class="res txt"><b>Résultat</b><span>Des analyses achats <strong>2× plus rapides</strong>.</span></p>
+    <ul class="bl"><li><b>Pipeline</b>Power Query alimente un modèle propre.</li><li><b>Dashboard</b>Les KPI des acheteurs sont interactifs.</li><li><b>Diffusion</b>Les managers le reçoivent automatiquement.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
   </div>
@@ -684,9 +699,9 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2021 → août 2022</b><small>Analyste financier</small></div>
     </div>
     
-    <h3>Mes débuts en finance</h3>
+    <h3>J'ai débuté en finance : comptabilité, fiscalité et trésorerie.</h3>
     
-    <ul class="bl"><li><b>Comptabilité</b>supervision comptable</li><li><b>Fiscalité</b>contrôle et déclarations</li><li><b>Trésorerie</b>prévisions de trésorerie</li></ul>
+    <ul class="bl"><li><b>Comptabilité</b>J'ai supervisé la comptabilité.</li><li><b>Fiscalité</b>J'ai contrôlé les déclarations fiscales.</li><li><b>Trésorerie</b>J'ai anticipé les besoins de trésorerie.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
   </div>
@@ -709,9 +724,9 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
                   <g><rect x="204" y="62" width="84" height="138" rx="10" fill="#fff"/><rect x="216" y="74" width="60" height="62" rx="8" fill="#E0F2FE"/><rect x="216" y="146" width="56" height="7" rx="3" fill="#0B2545"/><rect x="216" y="160" width="40" height="6" rx="3" fill="#D1D5DB"/><rect x="216" y="178" width="34" height="12" rx="6" fill="#FEF3C7"/></g>
                   <g><rect x="296" y="62" width="84" height="138" rx="10" fill="#fff"/><text x="338" y="112" text-anchor="middle" font-size="26">✈</text><text x="338" y="140" text-anchor="middle" font-weight="700" fill="#0B2545">Aéroports</text><text x="338" y="156" text-anchor="middle">Clients · Marques</text></g>
                 </g></svg></div>
-    <h3>Des nouveautés lancées plus simplement</h3>
-    
-    <ul class="bl"><li><b>Audit</b>process data et outils existants</li><li><b>Outils</b>contrôle des nouveautés</li><li><b>IA</b>catalogue IA, flux automatisés</li></ul>
+    <h3>J'ai simplifié le lancement des nouveautés Travel Retail, avec un catalogue généré par l'IA.</h3>
+    <p class="res txt"><b>Résultat</b><span>Des process de lancement <strong>2× plus rapides</strong>.</span></p>
+    <ul class="bl"><li><b>Audit</b>J'ai audité les process et les outils.</li><li><b>Outils</b>Les nouveautés sont ajoutées et contrôlées.</li><li><b>IA</b>Le catalogue est généré par l'IA.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span></div>
   </div>
@@ -720,40 +735,38 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
   <div class="tl-dot"></div>
   <div class="m-card glass">
     <div class="m-head">
-      <div class="logo"><span class="wm wm-carve">CARVE</span><span class="wm-sub">Avocats</span></div>
-      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Cabinet d'avocats</small></div>
+      <div class="logo"><img src="assets/logos/lvmh.png" alt="LVMH" style="height:28px"><span class="wm-sub">Fragrance Brands</span></div>
+      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Parfums & cosmétiques</small></div>
     </div>
-    <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Devis et compte rendu transformés en contrat par l'IA"><rect width="400" height="220" rx="16" fill="#F3F4F6"/>
-                <g font-family="Inter,Arial" font-size="10" font-weight="700">
-                  <rect x="20" y="30" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="58" text-anchor="middle" fill="#0B2545">Devis</text><rect x="34" y="70" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="82" width="38" height="6" rx="3" fill="#E5E7EB"/>
-                  <rect x="20" y="120" width="80" height="70" rx="10" fill="#fff"/><text x="60" y="148" text-anchor="middle" fill="#0B2545">Compte rendu</text><rect x="34" y="160" width="52" height="6" rx="3" fill="#E5E7EB"/><rect x="34" y="172" width="38" height="6" rx="3" fill="#E5E7EB"/>
-                  <path d="M104 65 C140 65 140 110 162 110 M104 155 C140 155 140 110 162 110" stroke="#0B2545" stroke-width="2.5" fill="none" stroke-dasharray="5 5" class="flow"/>
-                  <circle cx="196" cy="110" r="34" fill="#8B5CF6"/><text x="196" y="106" text-anchor="middle" fill="#fff" font-size="13">IA</text><text x="196" y="122" text-anchor="middle" fill="#EDE9FE" font-size="8">Power Automate</text>
-                  <path d="M232 110 H262" stroke="#0B2545" stroke-width="2.5" stroke-dasharray="5 5" class="flow"/>
-                  <rect x="266" y="22" width="112" height="176" rx="10" fill="#fff" stroke="#2B579A" stroke-width="2"/><rect x="266" y="22" width="112" height="26" rx="10" fill="#2B579A"/><text x="322" y="40" text-anchor="middle" fill="#fff">Contrat Word</text>
-                  <rect x="280" y="62" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="76" width="70" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="90" width="84" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="104" width="60" height="6" rx="3" fill="#E5E7EB"/><rect x="280" y="118" width="84" height="6" rx="3" fill="#E5E7EB"/>
-                  <path d="M288 170 c8 -14 14 6 22 -6 s12 4 22 -4" stroke="#0B2545" stroke-width="2" fill="none"/>
-                </g></svg></div>
-    <h3>Des contrats rédigés par l'IA</h3>
+    <button class="m-visual shot" data-src="assets/lvmh-suivi-chartes.webp" data-cap="LVMH Fragrance Brands · Suivi des chartes et de la photogravure"><img src="assets/lvmh-suivi-chartes.webp" alt="LVMH Fragrance Brands · Suivi des chartes et de la photogravure" loading="lazy"><span class="blurnote">Données floutées</span><span class="zoom">⤢</span></button>
+    <h3>J'ai refondu l'outil de suivi des chartes graphiques et ses dashboards pour la direction.</h3>
+    <p class="res txt"><b>Résultat</b><span>Un suivi des lancements optimisé.</span></p>
+    <ul class="bl"><li><b>Structure</b>Les colonnes et les champs sont repensés.</li><li><b>Lisibilité</b>Chaque campagne a ses statuts et vignettes.</li><li><b>Dashboards</b>La direction lit ses KPI d'un coup d'œil.</li></ul>
     
-    <ul class="bl"><li><b>Extraction</b>l'IA lit devis et comptes rendus</li><li><b>Génération</b>contrat Word rempli tout seul</li><li><b>Résultat</b>un contrat prêt, sans ressaisie</li></ul>
-    
-    <div class="tools"><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span><span class="tool"><img src="assets/tools/word.svg" alt="" loading="lazy">Word</span><span class="tool"><i class="ti ti-api">{}</i>API</span></div>
+    <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
   </div>
 </article>
 <article class="tl-item" style="order:5">
   <div class="tl-dot"></div>
   <div class="m-card glass">
     <div class="m-head">
-      <div class="logo"><img src="assets/logos/elsan.svg" alt="Elsan" style="height:30px"></div>
-      <div class="when"><div class="badges"><span class="badge free">Freelance</span></div><b>2026</b><small>Santé</small></div>
+      <div class="logo"><img src="assets/logos/sanofi.svg" alt="Sanofi" style="height:30px"></div>
+      <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2024 → sept. 2025</b><small>Chef de projet BI</small></div>
     </div>
-    <button class="m-visual shot" data-src="assets/elsan-gantt.webp" data-cap="Elsan · Gantt dynamique par jalon"><img src="assets/elsan-gantt.webp" alt="Elsan · Gantt dynamique par jalon" loading="lazy"><span class="blurnote">Projets floutés</span><span class="zoom">⤢</span></button>
-    <h3>Tous les projets pilotés au même endroit</h3>
+    <div class="m-visual"><svg viewBox="0 0 400 220" role="img" aria-label="Migration de Qlik Sense vers Power BI"><rect width="400" height="220" rx="16" fill="#F3EEFB"/>
+                <g font-family="Inter,Arial" font-size="11" font-weight="700">
+                  <rect x="20" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="20" y="40" width="140" height="28" rx="12" fill="#009845"/><text x="90" y="59" text-anchor="middle" fill="#fff">Qlik Sense</text>
+                  <rect x="36" y="130" width="14" height="34" rx="3" fill="#C7E9D3"/><rect x="56" y="112" width="14" height="52" rx="3" fill="#C7E9D3"/><rect x="76" y="122" width="14" height="42" rx="3" fill="#C7E9D3"/><rect x="96" y="96" width="14" height="68" rx="3" fill="#C7E9D3"/><rect x="116" y="104" width="14" height="60" rx="3" fill="#C7E9D3"/>
+                  <path d="M170 110 H226" stroke="#7A00E6" stroke-width="3" class="flow" stroke-dasharray="6 5"/><path d="M222 102 L232 110 L222 118" fill="none" stroke="#7A00E6" stroke-width="3"/>
+                  <rect x="240" y="40" width="140" height="140" rx="12" fill="#fff"/><rect x="240" y="40" width="140" height="28" rx="12" fill="#F2C811"/><text x="310" y="59" text-anchor="middle" fill="#0B2545">Power BI</text>
+                  <rect x="256" y="130" width="14" height="34" rx="3" fill="#F2C811"/><rect x="276" y="112" width="14" height="52" rx="3" fill="#E8A33C"/><rect x="296" y="122" width="14" height="42" rx="3" fill="#F2C811"/><rect x="316" y="96" width="14" height="68" rx="3" fill="#E8A33C"/><rect x="336" y="104" width="14" height="60" rx="3" fill="#F2C811"/>
+                  <rect x="256" y="78" width="46" height="10" rx="5" fill="#F3F4F6"/>
+                </g></svg></div>
+    <h3>J'ai piloté la migration des reportings de production de Qlik Sense vers Power BI.</h3>
+    <p class="res txt"><b>Résultat</b><span>Des indicateurs plus rapides et plus fiables.</span></p>
+    <ul class="bl"><li><b>Recueil</b>J'ai recueilli les besoins en usine.</li><li><b>Migration</b>Les rapports sont refaits dans Power BI.</li><li><b>Support</b>J'ai accompagné la production sur Excel.</li></ul>
     
-    <ul class="bl"><li><b>Fiabilisation</b>une base unique</li><li><b>Pilotage</b>Gantt et retards automatiques</li><li><b>Passation</b>tests, guide et formation</li></ul>
-    <div class="phases" aria-label="Déroulé de la mission en 11 jours"><span style="flex:1">Cadrage</span><span style="flex:3">Données</span><span style="flex:4">Pilotage & Gantt</span><span style="flex:1">UX</span><span style="flex:1">Tests</span><span style="flex:1">Formation</span></div><p class="phases-cap">Déroulé en 11 jours</p>
-    <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel 365</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span></div>
+    <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/qlik.svg" alt="" loading="lazy">Qlik Sense</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span></div>
   </div>
 </article>
 <article class="tl-item" style="order:7">
@@ -764,9 +777,9 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <div class="when"><div class="badges"><span class="badge found">Fondateur</span></div><b>Depuis juil. 2024</b><small>Mon école Excel</small></div>
     </div>
     <button class="m-visual shot" data-src="assets/bootcamp/apercu.webp" data-cap="Bootcamp Modern Excel · extraits du programme"><img src="assets/bootcamp/apercu.webp" alt="Bootcamp Modern Excel · extraits du programme" loading="lazy"><span class="zoom">⤢</span></button>
-    <h3>Ma propre école de formation Excel</h3>
-    <p class="res"><b>4,7/5</b><span>sur Trustpilot</span></p>
-    <ul class="bl"><li><b>Bootcamp</b>Excel de A à Z en 10 immersions</li><li><b>Communauté</b>150+ élèves formés</li><li><b>Enseignement</b>intervenant en école</li></ul>
+    <h3>J'ai fondé L'Excelérateur, mon école de formation Excel pour les professionnels.</h3>
+    <p class="res txt"><b>Résultat</b><span>Une note de <strong>4,7/5</strong> sur Trustpilot.</span></p>
+    <ul class="bl"><li><b>Bootcamp</b>Excel de A à Z, en 10 immersions.</li><li><b>Communauté</b>Plus de 150 élèves formés à ce jour.</li><li><b>Enseignement</b>J'interviens aussi en école.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Pivot</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div><a class="more" href="#formation" data-space="formation">Voir la formation →</a>
   </div>
@@ -779,9 +792,9 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
       <div class="when"><div class="badges"><span class="badge int">En interne</span></div><b>Sept. 2022 → août 2023</b><small>Data & BI analyst</small></div>
     </div>
     <button class="m-visual shot" data-src="assets/bnp-dashboard.webp" data-cap="BNP Paribas · Dashboard de pilotage ITG Finance"><img src="assets/bnp-dashboard.webp" alt="BNP Paribas · Dashboard de pilotage ITG Finance" loading="lazy"><span class="zoom">⤢</span></button>
-    <h3>Données fiabilisées, reportings automatisés</h3>
-    <p class="res txt"><b>Résultat</b><span>données nettement plus fiables</span></p>
-    <ul class="bl"><li><b>Qualité</b>contrôles des données et KPI</li><li><b>Automatisation</b>reportings automatisés en VBA</li><li><b>Dashboards</b>Excel et Tableau pour la direction</li></ul>
+    <h3>J'ai fiabilisé les données et automatisé les reportings de la direction financière.</h3>
+    <p class="res txt"><b>Résultat</b><span>Des données nettement plus fiables.</span></p>
+    <ul class="bl"><li><b>Qualité</b>J'ai mis en place des contrôles qualité.</li><li><b>Automatisation</b>Les reportings sont automatisés en VBA.</li><li><b>Dashboards</b>La direction suit ses KPI sur Tableau.</li></ul>
     
     <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/vba.svg" alt="" loading="lazy">VBA</span><span class="tool"><img src="assets/tools/tableau.svg" alt="" loading="lazy">Tableau</span></div>
   </div>
@@ -832,33 +845,33 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
         <div class="offer glass rv first">
           <span class="o-tag">Pour démarrer</span>
           <h3>Audit & process data</h3><p class="for">Finance, achats, équipes métier</p>
-          <ul class="bl"><li><b>Cartographie</b>flux, fichiers et sources</li><li><b>Qualité</b>contrôles, doublons, référentiels</li><li><b>Plan d’action</b>priorités et documentation</li></ul>
+          <ul class="bl"><li><b>Cartographie</b>Je cartographie vos flux et vos fichiers.</li><li><b>Qualité</b>Je traque doublons, écarts et erreurs.</li><li><b>Plan d’action</b>Je priorise et je documente.</li></ul>
           <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span></div>
         </div>
         <div class="offer glass rv">
           <h3>BI & Power BI</h3><p class="for">Finance, achats, grands groupes</p>
-          <ul class="bl"><li><b>Dashboards</b>KPI de pilotage dans Power BI</li><li><b>Modélisation</b>modèles de données et DAX</li><li><b>Migration</b>depuis Qlik Sense ou Tableau</li></ul>
+          <ul class="bl"><li><b>Dashboards</b>Vos KPI de pilotage dans Power BI.</li><li><b>Modélisation</b>Des modèles de données propres.</li><li><b>Migration</b>Depuis Qlik Sense ou Tableau.</li></ul>
           <div class="tools"><span class="tool"><img src="assets/tools/powerbi.svg" alt="" loading="lazy">Power BI</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">DAX</span><span class="tool"><img src="assets/tools/sharepoint.svg" alt="" loading="lazy">SharePoint</span></div>
         </div>
         <div class="offer glass rv">
           <h3>Excel & automatisation</h3><p class="for">PME, TPE, équipes métier</p>
-          <ul class="bl"><li><b>Outils sur mesure</b>devis, factures, plannings</li><li><b>Consolidation</b>Power Query et Power Pivot</li><li><b>Automatisation</b>VBA et Power Automate</li></ul>
+          <ul class="bl"><li><b>Outils sur mesure</b>Devis, factures et plannings.</li><li><b>Consolidation</b>Vos fichiers réunis avec Power Query.</li><li><b>Automatisation</b>Les tâches répétitives disparaissent.</li></ul>
           <div class="tools"><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Excel</span><span class="tool"><img src="assets/tools/excel.svg" alt="" loading="lazy">Power Query</span><span class="tool"><img src="assets/tools/vba.svg" alt="" loading="lazy">VBA</span><span class="tool"><img src="assets/tools/powerautomate.svg" alt="" loading="lazy">Power Automate</span></div>
         </div>
         <div class="offer glass rv">
           <h3>IA & applications</h3><p class="for">TPE, cabinets, services support</p>
-          <ul class="bl"><li><b>Documents IA</b>contrats, comptes rendus, catalogues</li><li><b>Workflows</b>Power Automate, API, n8n, Make</li><li><b>Applications</b>outils de gestion sur mesure</li></ul>
+          <ul class="bl"><li><b>Documents IA</b>Contrats et comptes rendus générés.</li><li><b>Workflows</b>Vos outils reliés entre eux.</li><li><b>Applications</b>Des outils de gestion sur mesure.</li></ul>
           <div class="tools"><span class="tool"><i class="ti ti-ia">✦</i>IA générative</span><span class="tool"><img src="assets/tools/claude.svg" alt="" loading="lazy">Claude Code</span><span class="tool"><img src="assets/tools/python.svg" alt="" loading="lazy">Python</span><span class="tool"><img src="assets/tools/n8n.svg" alt="" loading="lazy">n8n</span><span class="tool"><img src="assets/tools/make.svg" alt="" loading="lazy">Make</span></div>
         </div>
       </div>
       <div class="method glass rv">
-        <div><b>1</b><span>Audit</span><small>vos process</small></div>
+        <div><b>1</b><span>Audit</span><small>Vos process</small></div>
         <i>→</i>
-        <div><b>2</b><span>Fiabilisation</span><small>une base unique</small></div>
+        <div><b>2</b><span>Fiabilisation</span><small>Une base unique</small></div>
         <i>→</i>
-        <div><b>3</b><span>Automatisation</span><small>dashboards et flux</small></div>
+        <div><b>3</b><span>Automatisation</span><small>Dashboards et flux</small></div>
         <i>→</i>
-        <div><b>4</b><span>Transmission</span><small>formation</small></div>
+        <div><b>4</b><span>Transmission</span><small>Formation</small></div>
       </div>
 
       <div class="sub-head rv" id="realisations"><h3 class="sub-h">Exemples de <em>réalisations</em></h3><span class="sub-note">Données fictives</span></div>
@@ -884,10 +897,10 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
 
       <div class="sub-head rv"><h3 class="sub-h">Comment on <em>travaille ensemble</em></h3></div>
       <div class="collab">
-        <div class="glass rv"><span class="s-k">Lieu</span><b>Sur site ou à distance</b><p>Paris / IDF, 2 à 5 j par semaine</p></div>
-        <div class="glass rv"><span class="s-k">Format</span><b>Régie ou forfait</b><p>Via Malt ou en direct</p></div>
-        <div class="glass rv"><span class="s-k">Durée</span><b>Jours ou mois</b><p>Ex. : Elsan en 11 jours</p></div>
-        <div class="glass rv"><span class="s-k">Démarrage</span><b>Un appel pour cadrer</b><p>Puis un devis clair</p></div>
+        <div class="glass rv"><span class="s-k">Lieu</span><b>Sur site ou à distance</b><p>Paris et IDF, 2 à 5 jours par semaine.</p></div>
+        <div class="glass rv"><span class="s-k">Format</span><b>Régie ou forfait</b><p>Via Malt ou en direct.</p></div>
+        <div class="glass rv"><span class="s-k">Durée</span><b>Jours ou mois</b><p>Elsan : 11 jours, de l’audit à la formation.</p></div>
+        <div class="glass rv"><span class="s-k">Démarrage</span><b>Un appel pour cadrer</b><p>Puis un devis clair et détaillé.</p></div>
       </div>
       <div class="next-wrap"><button class="next" data-tab="missions">← Mes missions</button></div>
     </div>
@@ -911,10 +924,10 @@ footer{color:#5B6472;font-size:13px;padding:6px 20px 30px;text-align:center}
         </div>
         <div class="xl-tile"><img src="assets/tools/excel.svg" alt="Excel"></div>
       </div>
-      <div class="stat glass rv"><span class="s-k">Masterclass</span><b>Des milliers</b><span class="s-l">de participants</span></div>
-      <div class="stat glass rv"><span class="s-k">Élèves formés</span><b data-count="150" data-suffix="+">150+</b><span class="s-l">et ça continue</span></div>
-      <div class="stat glass rv"><span class="s-k">Programme</span><b>10</b><span class="s-l">immersions</span></div>
-      <div class="stat glass rv"><span class="s-k">Contenu</span><b>118</b><span class="s-l">vidéos et 8 défis</span></div>
+      <div class="stat glass rv"><span class="s-k">Masterclass</span><b>Des milliers</b><span class="s-l">De participants</span></div>
+      <div class="stat glass rv"><span class="s-k">Élèves formés</span><b data-count="150" data-suffix="+">150+</b><span class="s-l">Et ça continue</span></div>
+      <div class="stat glass rv"><span class="s-k">Programme</span><b>10</b><span class="s-l">Immersions</span></div>
+      <div class="stat glass rv"><span class="s-k">Contenu</span><b>118</b><span class="s-l">Vidéos et 8 défis</span></div>
     </div>
     <div class="imm rv" aria-label="Les 10 immersions du bootcamp"><img src="assets/bootcamp/immersion-1.webp" alt="Immersion 1 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-2.webp" alt="Immersion 2 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-3.webp" alt="Immersion 3 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-4.webp" alt="Immersion 4 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-5.webp" alt="Immersion 5 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-6.webp" alt="Immersion 6 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-7.webp" alt="Immersion 7 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-8.webp" alt="Immersion 8 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-9.webp" alt="Immersion 9 du Bootcamp Modern Excel" loading="lazy"><img src="assets/bootcamp/immersion-10.webp" alt="Immersion 10 du Bootcamp Modern Excel" loading="lazy"></div>
     <p class="imm-hint">Faites défiler →</p>
